@@ -10,7 +10,7 @@ Thời gian dừng là khối lượng thời gian một một người tìm ki�
 Dĩ nhiên,thời gian một người dành cho trang của bạn càng dai càng tốt.Vấy này sẽ nói với google là :Bạn tôi ơi,mọi ngườ rất thích kết quả này.Hãy nâng nó lên một vài bậc.
 Và nếu có ai đó nhảy ra khỏi trang của bạn sau 2 giây,điều đó bảo với google rằng :Kết quả này tồi tệ,hãy giảm nó xuống một vài bậc.
 Vì vậy nó hợp lý rằng RankBrain sẽ đo thời gian dừng - và đổi chỗ kết quả dựa trên những tín hiệu này.
-Thực ra,gần đây một nhân viên google đã nói rằng google đã từng 100% dựa vào tín hiệu trả về(đặc biệt là tín hiệu trả về).Mặc dù google vẫn sử dụng liên kết trả về,người nhân viên đã chỉ ra răng
+Thực ra,gần đây một nhân viên google đã nói rằng google đã từng 100% dựa vào tín hiệu trả về(đặc biệt là tín hiệu trả về).Mặc dù google vẫn sử dụng liên kết trả về,người nhân viên đã chỉ ra răng:
 Và cơ sở dữ liệu sao lưu lại.Khi chúng ta phân tích một khối lương lớn kết quả google tìm kiếm chúng ta thấy một sự tương quan giữa xấp hạng cao và tỷ lệ thoát thấp.
 # Trang 3
 # Cách để giảm tỷ lệ thoát và tăng thời gian dừng.
@@ -40,6 +40,7 @@ Vậy bạn kích vào nút quay lại để tìm kiếm cái gì đó tốt hơ
 Và lần này bạn trúng độc đặc.
 Bạn tìm một hướng dẫn toàn diện chứa đựng tất cả những thứ bạn cần biết về chạy việt dã.
 Vậy nên bạn lấy một tách cà phê và đọc bản hướng dẫn từ đầu cho tới cuối.Bạn còn dọc lại các mục quan trọng.Tất cả việc đọc này sẽ giúp tăng đáng kể thời gian dừng .
+Nội dung hoạt động rất tốt khiến tôi chỉ có khuynh hướng đăng tải nội dung có ít nhất 2000 từ.
 # 4 Tách nội dung của bạn thành các phần vừa để đọc.
 Hãy nhận ra rằng:
 Đọc 2000 từ rất là khó
@@ -67,6 +68,45 @@ Và khi họ đang quét các kết quả tìm kiếm,khả năng họ kích và
 Không gì cải thiện nhận thức thương hiệu hơn gửi nội dung có giá trị đến hộp thư của mọi người.
 Thưc ra tỷ lệ mở của tôi cao hơn mức trung bình của ngành bởi vì tôi chỉ gửi những thứ tốt:
 Không cần phải nói những người đã đăng ký nhận thức được rằng tài liệu của tôi là tốt nhất trong ngành.Nên khi Backlinko hiện lên trên trang một,khả năng cao là họ sẽ kích vào kết quả của tôi.
+# 3 Cuối cung là làm một cái  “Content Blitz”.
+Một  “Content Blitz” là nơi bạn tải lên một đống nội dung trong một thời gian ngắn.Và tin tôi đi cách này hiệu quả hơn đăng các nội dung nhỏ trong cả năm.
+Trên thức tế tôi sử dụng một Content Blitz khi tôi bắt đầu với Backlinko.
+Tôi đăng tải bài đăng của khách.
+Tôi tiến đến Podcasts.
+Thậm chí tôi còn đồng tác giả một bài hướng dẫn với Neil Patel.
+Tất cả chi trong khoảng thời gian vài tháng.
+# Biến từ con số 0 thành người hùng(“Zeros” to “Heros”)
+Bạn có một trang trên trang web của mình không hoạt động tốt như bạn mong muốn?
+Tôi có tin vui đây.Nếu bạn quay lại tối ưu trang của bạn cho RankBrain,bạn có thể cho trang của bạn một sự thúc đẩy bậc rất nhiều.
+Ví dụ như Sean từ Proven.com có bài hướng dẫn lớn ở trang web của anh ấy và vẫn hoạt động ok nhưng thứ bậc không cao như anh ấy mong muốn.
+Và Sean nhận ra tên nhan đề của trang của anh ấy không hấp dẫn để kích vào.
+Vì vậy anh ấy thêm số,một từ ngữ mạnh va dấu ngoặc đơn cho nhan đề của trang.
+Và điều thay đổi duy nhất này tăng lưu lượng truy cập không phải trả tiền của trang web của Sean lên gần 128%:
+Đúng vây,một phần trong sự tăng lưu lượng truy cập la do sự thật đơn giản là có nhiều người hơn kích vào kết quả của Sean.
+Nhưng điều quan trọng trong câu truyện là RankBrain  nhận thấy sự tăng của CTR và đưa trang của Sean lên một vài bậc.
+# Sử dung từ khóa LSI để điền vào Khoảng trống nội dung.
+Từ khóa LSI là những từ và động từ liên quan đến nội dung chính của chủ đề.
+Tại sao từ khóa LSI quan trọng ?À,nó đưa RankBrain bối cảnh họ cần để hiểu đầy đủ trang của bạn.
+Lấy ví dụ bạn đang viết một bản hướng dẫn về xây dựng liên kết.
+Từ khóa LSI là những thứ như:
+Backlinks
+Domain Authority
+Email outreach
+Anchor text
+Và khi RankBrain thấy nội dung của bạn chứa những thuật ngữ này họ tin rằng trang của bạn là về xây dựng liên kết.Điều đó có nghĩa là bạn có thứ hạng cao cho việc từ khóa gắn liền với chủ đề.
+Bạn có thể khám phá các từ khóa LSI bằng công cụ hiểu ngôn ngữ tự nhiên Watson.
+Cộng cụ này phân tích nội dung mà bạn đưa cho nó như khái niệm,thực thể và danh mục.
+Ví dụ như khi tôi dán vào bản nháp đầu tiên của hướng dẫn này, nó đưa ra các khái niệm mà liên quan đến RankBrain.
+Phần thu vị là tôi không đề cập đến  nhiều những thuật ngữ này trong bản hướng dẫn.Giống như RankBrain,Watson hiểu nội dung của tôi về cái gì.Rất tuyệt.
+Và khi bạn rải những rừ khóa LSI này vào bai đăng của bạn,bạn sẽ xác nhận với RankBrain rằng nội dung của bạn là hoàn chỉnh.
+# Bây giờ đến lượt bạn.
+Tôi đã dồn nhiều công sức vào bài hướng dẫn này.Tôi hy vọng bạn thích nó.
+Bây giờ tôi muốn nghe bạn muốn nói điều gì.
+Cái típ nào là típ số 1 bạn sẽ áp dung?
+Bạn có tập trung vao CTR?Sử dụng từ khóa LSI ?Hay cải thiện thời gian dừng của bạn ?Nói tôi biết bằng việc để lại bình luận ở phía dưới.
+
+
+
 
 
 
