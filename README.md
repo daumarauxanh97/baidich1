@@ -5,7 +5,6 @@
 Ok vậy bạn đã sử dung mẹo thúc đẩy CTR của tôi.Và dã có nhiều người hơn bao giờ hết kích vào kết quả của bạn.
 
 Bây giờ thì sao?À,bạn phải cho google thấy rằng kết quả của bạn khiến người sử dụng vui vẻ.
-
 Và cách tốt nhất để làm điều đó?Cải thiện thời gian dừng của bạn.
 # Trang 2
 # Google có thật sự sủ dụng thời gian dừng?Dúng vậy.
