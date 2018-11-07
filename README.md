@@ -1,31 +1,31 @@
 # baidich1 Chương 5 + 6
 # Trang 1
-# Chương 5: Cách để tối ưu nội dung của bạn qua tỷ lệ thoát va thời gian sử dụng.
+# Chương 5: Cách để tối ưu nội dung của bạn cải thiện tỷ lệ thoát và time on site.
 
-Ok vậy bạn đã sử dung mẹo thúc đẩy CTR của tôi.Và dã có nhiều người hơn bao giờ hết kích vào kết quả của bạn.
+Ok vậy bạn đã sử dung mẹo tăng CTR của tôi.Và số lượng người nhấp vào kết quả của bạn nhiều hơn bao giờ hết.
 
-Bây giờ thì sao?À,bạn phải cho google thấy rằng kết quả của bạn khiến người sử dụng vui vẻ.
+Bây giờ thì sao?À,bạn phải cho google thấy rằng kết quả của bạn làm người sử dụng hài lòng.
 
-Và cách tốt nhất để làm điều đó?Cải thiện thời gian dừng của bạn.
+Và cách tốt nhất để làm điều đó?Cải thiện Dwell Time của bạn.
 # Trang 2
-# Google có thật sự sủ dụng thời gian dừng?Dúng vậy.
-Thời gian dừng là khối lượng thời gian một một người tìm kiếm dành thời gian trên trang của bạn sau khi kích vào kết quả của bạn.
+# Google có thật sự sủ dụng Dwell Time ? Đúng vậy.
+Dwell Time là lượng thời gian một một người tìm kiếm dành thời gian trên trang của bạn sau khi kích vào kết quả của bạn.
 
-Dĩ nhiên,thời gian một người dành cho trang của bạn càng dai càng tốt.Vấy này sẽ nói với google là :Bạn tôi ơi,mọi ngườ rất thích kết quả này.Hãy nâng nó lên một vài bậc.
+Dĩ nhiên,thời gian một người dành cho trang của bạn càng dài càng tốt.Điều này sẽ nói với google là :Bạn tôi ơi,mọi người rất thích kết quả này.Hãy nâng nó lên một vài bậc.
 
 Và nếu có ai đó nhảy ra khỏi trang của bạn sau 2 giây,điều đó bảo với google rằng :Kết quả này tồi tệ,hãy giảm nó xuống một vài bậc.
 
-Vì vậy nó hợp lý rằng RankBrain sẽ đo thời gian dừng - và đổi chỗ kết quả dựa trên những tín hiệu này.
+Vì vậy nó hợp lý rằng RankBrain sẽ đo Dwell Time - và đổi chỗ kết quả dựa trên những tín hiệu này.
 
-Thực ra,gần đây một nhân viên google đã nói rằng google đã từng 100% dựa vào tín hiệu trả về(đặc biệt là tín hiệu trả về).Mặc dù google vẫn sử dụng liên kết trả về,người nhân viên đã chỉ ra răng:
+Thực ra,gần đây một nhân viên google đã nói rằng google đã từng 100% dựa vào tín hiệu trả về(đặc biệt là backlinks).Mặc dù google vẫn sử dụng backlinks , nhân viên này đã chỉ ra rằng:
 
-Và cơ sở dữ liệu sao lưu lại.Khi chúng ta phân tích một khối lương lớn kết quả google tìm kiếm chúng ta thấy một sự tương quan giữa xấp hạng cao và tỷ lệ thoát thấp.
+Và cơ sở dữ liệu sao lưu lại.Khi chúng ta phân tích một khối lương lớn kết quả google tìm kiếm chúng ta thấy một sự tương quan giữa xếp hạng cao và tỷ lệ thoát thấp.
 
 # Trang 3
 
-# Cách để giảm tỷ lệ thoát và tăng thời gian dừng.
+# Cách để giảm tỷ lệ thoát và tăng Dwell Time.
 
-Bây giờ là lúc tôi chia sể cho các bạn một vài chiến thuật mà bạn có thể sử dụng để tăng thời gian dừng cho trang của bạn .
+Bây giờ là lúc tôi chia sể cho các bạn một vài chiến lược mà bạn có thể sử dụng để tăng Dwell Time cho trang của bạn .
 
 # 1 Đặt nội dung của bạn lên trên màn hình đầu tiên.
 
@@ -55,13 +55,13 @@ Thay vì vậy,sư dụng phần giới thiệu của bạn để thu hút ngư�
 
 Khi một ai đó tìm kiếm “white hat SEO” đọc lời giới thiệu họ nghĩ:Thật tuyệt,mình đã đến đúng chỗ rồi.
 
-# 3 Đẩy lên nội dung dài,sâu.
+# 3 Xuất bản nội dung dài, chuyên sâu.
 
 Tôi đã kiếm việc này mười cách tới thứ ba.Và tôi có thể tự tin nói với bạn rằng:
 
-Nội dung dài=Thời gian dừng tốt hơn.
+Nội dung dài=Dwell Time  cao hơn.
 
-Hiển nhiên,nó tốn nhiều thời gian để đọc hướng dẫn 2000 từ hơn là bài đăng trên blog 400 từ.Nhưng đó chỉ là một phần của phương trình.
+Hiển nhiên,nó tốn nhiều thời gian để đọc hướng dẫn 2000 từ hơn là bài đăng trên blog 400 từ.Nhưng đó chỉ là một phần của cách này.
 
 Lý do khác khiến cho nội dung dài cải thiện thời gian dừng là nó có thể trả lời đầy đủ truy vấn của người tìm kiếm.
 
@@ -77,7 +77,7 @@ Bạn tìm một hướng dẫn toàn diện chứa đựng tất cả những t
 
 Vậy nên bạn lấy một tách cà phê và đọc bản hướng dẫn từ đầu cho tới cuối.Bạn còn dọc lại các mục quan trọng.Tất cả việc đọc này sẽ giúp tăng đáng kể thời gian dừng .
 
-Nội dung hoạt động rất tốt khiến tôi chỉ có khuynh hướng đăng tải nội dung có ít nhất 2000 từ.
+Nội dung dài hoạt động rất tốt khiến tôi chỉ có khuynh hướng đăng tải nội dung có ít nhất 2000 từ.
 
 # 4 Tách nội dung của bạn thành các phần vừa để đọc.
 
@@ -89,7 +89,7 @@ Và nó còn khó hơn nếu 2000 từ đấy được biểu diễn dưới d�
 
 May thay,có cách để giải quyết vấn đề này:tiêu đề phụ.
 
-Tiêu đề phụ tách nội dung của bạn thành các phần vừa có thể hiểu được.Việc nay cải thiện khả năn đọc và tất nhiên cải thiện thời gian dừng.
+Tiêu đề phụ tách nội dung của bạn thành các phần vừa có thể hiểu được.Việc nay cải thiện khả năng đọc và tất nhiên cải thiện thời gian dừng.
 
 Tôi sử dụng rất nhiều tiêu đề phụ ở liên kết trả về cũng vì lí do này.
 
@@ -100,13 +100,13 @@ Ví dụ như  “3 Simple Backhand Drills The Pros Use” và “What New Resea
 
 # Chương 6:Thêm về chiến lược tối ưu hóa RankBrain và các nghiên cứu điển hình.
 
-Trong chương này tôi sẽ nói về chiến thuật hữu ích và nhanh gọn mà bạn có thể sử dụng để tối ưu hóa trang của bạn cho RankBrain.
+Trong chương này tôi sẽ nói về chiến lược hữu ích và nhanh gọn mà bạn có thể sử dụng để tối ưu hóa trang của bạn cho RankBrain.
 
 # Trang 1
 
 Tăng nhận thức về thương hiện cải thiện CTR.
 
-Tôi đã cho bạn thấy cách mà sô,cảm xúc và từ ngữ có sức ảnh hưởng mạnh có thể cải thiện CTR không phải trả tiền của bạn.
+Tôi đã cho bạn thấy cách mà thêm số,cảm xúc và từ ngữ mạnh có thể cải thiện CTR không phải trả tiền của bạn.
 
 Nhưng có một vấn đề lớn tôi chưa đề cập:nhận thức thương hiệu.
 
