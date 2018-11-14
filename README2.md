@@ -104,4 +104,133 @@ Tôi muốn tạo một branch bên ngoài từ cái branch cục bộ
 
 Tôi muốn đặt branch bên ngoài đồng bội với branch cục bộ của tôi
 
-Tôi muốn đặt HEAD của tôi 
+Tôi muốn đặt HEAD của tôi mặc định điều khiển theo brand
+
+Tôi đã thực hiện thay đổi sai branch
+
+## Rebasing và Merging
+
+Tôi muốn quay lại thao tác rebase/merge
+
+Tôi đã rebase, nhưng tôi không muốn ép push
+
+Tôi cần kết hợp commit
+
+Chiến lược an toàn nhất
+
+Tôi chỉ muốn kết hợp các commit chưa được đồng bộ
+
+Tôi cần hủy merge
+
+Tôi cần cập nhập các commit trước đây từ branch của tôi.
+
+Kiểm tra nếu toàn bộ commit trên branch đều merge
+
+Có thể có vấn đề về tương tác với rebase
+
+Màn hình rebase hiển thị 'noop'
+
+Có xung đột
+
+## Stash
+
+Chỉnh sửa toàn bộ Stash
+
+Tập tin cụ thể Stash
+
+Stash với message
+
+Chấp thuận một stash cụ thể từ danh sách
+
+## Finding
+
+Tôi muốn tìm một chuỗi trong bất kỳ commmit nào
+
+Tôi muốn tìm theo tác giả / người commit
+
+Tôi muốn một danh sách commit chứa những tập tin cụ thể
+
+Tìm thẻ nơi mà commit được tham chiếu
+
+## Submodules
+
+Sao chép tất cả các mô-đun con
+
+Xóa một mô-đun con
+
+## Miscellaneous Objects
+
+Khôi phục tập tin đã bị xóa
+
+Xóa thẻ
+
+Khôi phục lại thẻ đã bị xóa
+
+Xóa Patch
+
+Xuất tập tin dưới dạng zip
+
+Đẩy một branch và thể có cùng tên
+
+## Tệp theo dõi
+
+Tôi muốn thay đổi cách viết hoa của tên tập tin mà không bị thay đổi nội dung của tập tin.
+
+Tôi muốn ghi đè tập tin cục vộ khi đang kéo git về
+
+Tôi muốn xóa một tập từ tin Git nhưng giữ toàn bộ tập tin lại
+
+Tôi muốn hoàn tác tệp về bản sửa đổi trước
+
+Tôi muốn liệt kê các thay đổi của một tệp cụ thể giữa các commit hoặc branches
+
+Tôi muốn Git bỏ qua những thay đổi của một một tập tin.
+
+## Configuration
+
+Tôi muốn thêm tên riêng cho một số lệnh Git
+
+Tôi muốn thêm một thư mục trống vào kho lưu trữ
+
+Tôi muốn lưu tên người dùng và mật khẩu cho repository
+
+Tôi muốn khiển Git bỏ qua các quyền và thay đổi của filemode
+
+Tôi muốn cài đặt một người dùng cục bộ
+
+Tôi muốn thêm màu cho dòng lệnh với Git
+
+### Tôi không nghĩ rằng tôi làm sai.
+
+## Những Resources khác
+
+Sách
+
+Hướng Dẫn
+
+Script và Tools
+
+GUI Clients
+
+## Repositories
+
+## Tôi muốn khowrt tạo một Repositories cục bộ
+
+Để khởi tạo thư mục đã tồn tại dưới dạng Git repository
+
+(my-folder) $ git init
+
+## Tôi muốn sao lưu một repository từ xa.
+
+Để sao lưu (coppy) một repository từ xa cần coppy url cho repository và khởi chạy: 
+
+$ git clone [url]
+
+Điều này sẽ lưu nó vào một thư mục có tên giống như repository từ xa. Hãy chắc chắn rằng bạn kết nối được tới máy chủ mà bạn đang sao lưu (Hầu hết các việc này là để đảm bảo máy tính bạn bạn đã kết nối với internet).
+
+Để sao lưu vào một thư mục có tên khác tên repository mặc định:
+
+$ git clone [url] name-of-new-folder
+
+
+
