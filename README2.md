@@ -241,9 +241,9 @@ $ git clone [url] name-of-new-folder
 
 ## Tôi vừa commit gì ?
  Giả sử bạn chỉ thực hiện các thay đổi một cách ngẫu nhiên với git commit -a và bạn không chắc chắn với nội dung thực sự của commit bạn vừa tạo ra là gì. Bạn có thể hiển thị cam kết mới nhất trên HEAD của bạn với : 
- 
+ ---
  (master)$ git show
- 
+ ---
  Hoặc
  
  $ git log -n1 -p
