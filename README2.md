@@ -241,44 +241,49 @@ $ git clone [url] name-of-new-folder
 
 ## Tôi vừa commit gì ?
  Giả sử bạn chỉ thực hiện các thay đổi một cách ngẫu nhiên với git commit -a và bạn không chắc chắn với nội dung thực sự của commit bạn vừa tạo ra là gì. Bạn có thể hiển thị cam kết mới nhất trên HEAD của bạn với : 
- ---
+ ```
  (master)$ git show
- ---
+ ```
  Hoặc
- 
+ ```
  $ git log -n1 -p
+ ```
  
  Nếu bạn muốn xem một tập tin tại một commit cụ thể, bạn cũng có thể làm điều này (trong đó <commitid> là commit mà bạn quan tâm):
-  
+   ```
   $ git commit --amend --only
+  ```
   
   Thao tác này sẽ mở trình soạn thảo văn bản mặc định của bạn, nơi bạn có thể chỉnh sửa tin nhắn. Mặt khác, bạn hoàn toàn có thể làm tất cả điều này với một lệnh:
-  
+   ```
   $ git commit --amend --only -m 'xxxxxxx'
+   ```
   
   Nếu bạn đã đẩy tin nhắn lên, bạn có thể sửa đổi commit và ép đẩy lên, nhưng điều này không được khuyến khích.
   
   ## Tôi đã commit sai cấu hình tên và email
   
   Nếu đó là một commit đơn hãy sửa nó
-  
+   ```
   $ git commit --amend --no-edit --author "New Authorname <authoremail@mydomain.com>"
-  
+   ```
+ 
   Một cách khác để cấu hình chính xác cài đặt trong git config --global author.(name|email) và sử dụng:
-  
+   ```
   $ git commit --amend --reset-author --no-edit
+   ```
   
   Nếu bạn cần thay đổi toàn bộ lịch sử hãy xem treang hướng dẫn cho git filter-branch.
-  
   ## Tôi muốn xóa một file từ commit trước đó
   
   ĐỂ xóa các thay đổi cho một file từ commit trước làm theo hướng dẫn sau:
-  
+   ```
   $ git checkout HEAD^ myfile
   
 $ git add myfile
 
 $ git commit --amend --no-edit
+ ```
 
 Trong trường hợp tệp mới được thêm vào commit và bạn muốn xóa nó (từ sao lưu Git) hãy làm theo cách sau: 
 
