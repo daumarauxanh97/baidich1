@@ -573,12 +573,249 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
 ```
  _Tại sao_
  
- <JavaScript chặn phân tích cú pháp bình thường của tài liệu HTML, vì vậy khi trình phân tích cú pháp đạt đến thẻ `<script>` (đặc biệt là bên trong <head>), nó dừng lại để tìm nạp và chạy nó. Việc thêm `async` hoặc `defer` được khuyến nghị cao nếu tập lệnh của bạn được đặt ở đầu trang nhưng ít có giá trị hơn ngay trước thẻ `</ body>` của bạn. Nhưng thực tiễn tốt là luôn sử dụng các thuộc tính này để tránh bất kỳ vấn đề hiệu suất nào.
+ >JavaScript chặn phân tích cú pháp bình thường của tài liệu HTML, vì vậy khi trình phân tích cú pháp đạt đến thẻ <script> (đặc biệt là bên trong <head>), nó dừng lại để tìm nạp và chạy nó. Việc thêm `async` hoặc `defer` được khuyến nghị cao nếu tập lệnh của bạn được đặt ở đầu trang nhưng ít có giá trị hơn ngay trước thẻ `</ body>` của bạn. Nhưng thực tiễn tốt là luôn sử dụng các thuộc tính này để tránh bất kỳ vấn đề hiệu suất nào.
  
  _Làm như thế nào_
  
  >⁃ Thêm `async` (nếu tập lệnh không dựa vào các tập lệnh khác) hoặc `defer` (nếu tập lệnh dựa vào hoặc được dựa vào bởi tập lệnh không đồng bộ) làm thuộc tính cho thẻ tập lệnh của bạn.<br>
 ⁃ Nếu bạn có tập lệnh nhỏ, có thể sử dụng vị trí tập lệnh nội tuyến phía trên các tập lệnh không đồng bộ
+
+**Tối ưu hóa và cập nhật Thư viện JS** Tất cả các thư viện JavaScript được sử dụng trong dự án của bạn là cần thiết (ưu tiên JavaScript của Vanilla cho các chức năng đơn giản), được cập nhật lên phiên bản mới nhất của chúng và không áp đảo JavaScript của bạn với các phương thức không cần thiết.
+
+   _Tại sao_
+  
+  >Hầu hết trường hợp, các phiên bản mới đi kèm với tối ưu hóa và sửa chữa bảo mật. Bạn nên sử dụng mã được tối ưu hóa nhất để tăng tốc dự án của mình và đảm bảo rằng bạn sẽ không làm chậm trang web hoặc ứng dụng của mình bằng plugin lỗi thời.
+  
+  _Làm như thế nào_
+  
+  >Nếu dự án của bạn sử dụng các gói NPM, thì npm-check là một thư viện khá thú vị để nâng cấp / cập nhật các thư viện của bạn. Greenkeeper có thể tự động tìm kiếm các phụ thuộc của bạn và đề xuất thời gian cập nhật môi khi có phiên bản mới.
+  
+  - :book: You may not need jQuery
+  
+  - :book: Vanilla JavaScript for building powerful web applications
+  
+**Kiểm tra giới hạn kích thước phụ thuộc:** Đảm bảo sử dụng các thư viện khôn ngoan bên ngoài, hầu hết thời gian, bạn có thể sử dụng thư viện nhẹ hơn cho cùng một chức năng.
+
+ _Tại sao_
+ 
+ >Bạn có thể bị cám dỗ sử dụng một trong 745 000 gói bạn có thể tìm thấy trên npm, nhưng bạn cần phải chọn gói tốt nhất cho nhu cầu của bạn. Ví dụ, MomentJS là một thư viện tuyệt vời nhưng với rất nhiều phương pháp bạn không bao giờ có thể sử dụng, đó là lý do tại sao Day.js được tạo ra. Nó chỉ là 2kB so với 16.4kB gz cho Moment.
+ 
+ _Làm như thế nào_
+ 
+ >Luôn so sánh và chọn thư viện tốt nhất và nhẹ hơn cho nhu cầu của bạn. Bạn cũng có thể sử dụng các công cụ như xu hướng npm để so sánh số lượng tải xuống gói NPM hoặc Bundlephobia để biết kích thước của các phụ thuộc của bạn.
+ 
+**JavaScript Profiling:** Kiểm tra các vấn đề hiệu suất trong các tệp JavaScript của bạn (và CSS cũng vậy).
+
+  _Tại sao_
+
+  >Sự phức tạp của JavaScript có thể làm chậm hiệu năng thời gian chạy. Việc xác định các vấn đề có thể có này là điều cần thiết để cung cấp trải nghiệm  mượt mà nhất cho người dùng.
+
+  _Làm như thế nào_
+
+  >Sử dụng công cụ Timeline trong Chrome Developer Tool để đánh giá các sự kiện tập lệnh và tìm thấy sự kiện có thể mất quá nhiều thời gian.
+  
+  - :book: Tăng tốc độ thực thi JavaScript  | Công cụ dành cho nhà phát triển web |  Google Developers
+  
+  - :book: JavaScript Profiling với các công cụ phát triển Chrome - Smashing Magazine
+  
+  - :book: Làm thế nào để ghi lại heap snapshots. Công cụ dành cho nhà phát triển web | Google Developer
+  
+  - :book: Chương 22 - Lập cấu hình Frontend - Blackfire
+  
+  - :book: 30 Mẹo để cải thiện hiệu suất Javascript
+  
+⬆ Trở về đầu trang
+
+## Server
+
+**Website của bạn đang sử dụng HTTPS:**
+ 
+ _Tại sao_
+ 
+ >HTTPS không chỉ dành cho các trang web thương mại điện tử mà còn cho tất cả các trang web đang trao đổi dữ liệu. Dữ liệu được chia sẻ bởi người dùng hoặc dữ liệu được chia sẻ với một thực thể bên ngoài. Các trình duyệt hiện đại giới hạn chức năng cho các trang web không an toàn. Ví dụ: định vị địa lý, thông báo đẩy và nhân viên dịch vụ không hoạt động nếu cá thể của bạn không sử dụng HTTPS. Và ngày nay, việc thiết lập dự án với chứng chỉ SSL dễ dàng hơn nhiều so với trước đây (và miễn phí, nhờ vào Let's Encrypt).
+ 
+ - :book: Tại sao nên sử dụng HTTPS?| Cloudflare
+ 
+ - :book: Kích hoạt HTTPS mà không cần hy sinh hiệu suất web của bạn- Moz
+ 
+ - :book: Cách HTTPS ảnh hưởng đến hiệu suất trang web
+ 
+ - :book: HTTP versus HTTPS versus HTTP2 - The real story | Tune The Web
+ 
+ - :book: HTTP vs HTTPS — Test them both yourself
+ 
+**Dung lượng trang <1500 KB(lý tưởng là <500KB)** Giảm kích thước của trang + tài nguyên của bạn nhiều nhất có thể.  
+
+  _Tại sao_
+  
+  >Lý tưởng nhất là bạn nên cố gắng nhắm mục tiêu <500 KB nhưng trạng thái web cho thấy trung bình của Kilobyte là khoảng 1500 KB (ngay cả trên thiết bị di động). Tùy thuộc vào người dùng mục tiêu của bạn, kết nối mạng, thiết bị, điều quan trọng là phải giảm càng nhiều càng tốt Kilobyte của bạn để có trải nghiệm người dùng tốt nhất có thể.
+  
+  _Làm như thế nào_
+  
+  >⁃ Tất cả các quy tắc trong Danh sách kiểm tra hiệu năng Front-End sẽ giúp bạn giảm nhiều nhất có thể tài nguyên và mã của bạn.
+  
+  - :book: Page Weight
+  
+  - 🛠 What Does My Site Cost?
+  
+  - 🛠  web - Measure full page size in Chrome DevTools - Stack Overflow
+  
+ **Thời gian load trang<3s** Giảm thời gian tải trang càng nhiều càng tốt để phân phối nội dung của bạn nhanh chóng tới người dùng của bạn. 
+ 
+  _Tại sao_
+  
+  >Trang web hoặc ứng dụng của bạn càng nhanh, bạn càng ít có khả năng tăng thư bị trả lại, nói cách khác, bạn có ít cơ hội mất người dùng hoặc khách hàng trong tương lai.Có đủ nghiên cứu về chủ đề này chứng minh quan điểm đó.
+  
+  _Làm như thế nào_
+  
+  >Sử dụng các công cụ trực tuyến như Page Speed Insight hoặc WebPageTest để phân tích những gì có thể làm chậm bạn xuống và sử dụng Front-End Performance Checklist để cải thiện thời gian tải của bạn.
+  
+  - 🛠 Compare your mobile site speed
+  
+  - 🛠 Test Your Mobile Website Speed and Performance - Think With Google
+  
+  - :book: Average Page Load Times for 2018 - How does yours compare? - MachMetrics Speed Blog
+  
+**Thời gian cho byte đầu tiên < 1.3 giây**  Giảm thiểu thời gian mà trình duyệt của bạn đợi trước khi nhận dữ liệu.
+ 
+  - :book: What is Waiting (TTFB) in DevTools, and what to do about it
+  
+  - :book: Monitoring your servers with free tools is easy
+  
+  - :book: Time to First Byte (TTFB)
+  
+  - 🛠 Global latency testing tool
+  
+**Kích cỡ Cookie**: Nếu bạn đang sử dụng cookie, hãy đảm bảo rằng mỗi cookie không vượt quá 4096 byte và tên miền của bạn không có nhiều hơn 20 cookie.  
+ 
+ _Tại sao_
+ 
+ >Cookie được trao đổi trong tiêu đề HTTP giữa các máy chủ web và trình duyệt. Điều quan trọng là phải giữ kích thước cookie càng thấp càng tốt để giảm thiểu tác động đến thời gian phản hồi của người dùng.
+ 
+ _Làm như thế nào_
+ 
+ >Loại bỏ các cookie không cần thiết.
+ 
+ - :book: Cookie specification: RFC 6265
+ 
+ - :book: Cookies
+ 
+ - 🛠  Browser Cookie Limits
+ 
+ - :book: Website Performance: Cookies Don't Taste So Good - Monitis Blog
+ 
+ - :book:  Google's Web Performance Best Practices #3: Minimize Request Overhead - GlobalDots Blog
+ 
+**Giảm thiểu yêu cầu HTTP** Luôn đảm bảo rằng mọi tệp được yêu cầu đều cần thiết cho trang web hoặc ứng dụng của bạn.
+
+ - :book: Combine external CSS
+ 
+ - :book: Combine external JavaScript
+ 
+**Sử dụng CDN để phân phối nội dung của bạn:** Sử dụng CDN để phân phối nội dung của bạn nhanh hơn trên toàn thế giới
+
+- :book: 10 Tips to Optimize CDN Performance - CDN Planet
+
+- :book: HTTP Caching  |  Web Fundamentals  |  Google Developers
+
+**Phân phối tệp từ cùng một giao thức:** Tránh để trang web của bạn phân phối tệp đến từ nguồn sử dụng HTTP trên trang web của bạn đang sử dụng HTTPS chẳng hạn. Nếu trang web của bạn đang sử dụng HTTPS, các tệp bên ngoài phải đến từ cùng một giao thức.
+
+**Phân phối tệp có thể truy cập:** Tránh yêu cầu tệp không thể truy cập (404).
+
+ - :book: How to avoid bad requests
+ 
+**Đặt tiêu đề bộ nhớ cache HTTP đúng cách:** đặt Tiêu đề HTTP cao để tránh số lượng vòng lặp cao giữa trình duyệt và máy chủ của bạn.
+
+ - :book: Using cache-control for browser caching
+ 
+**Nén GZIP / Brotli được bật:** Sử dụng phương pháp nén như Gzip hoặc Brotli để giảm kích thước tệp JavaScript của bạn. Với tệp kích thước nhỏ hơn, người dùng sẽ có thể tải xuống nội dung nhanh hơn, dẫn đến hiệu suất được cải thiện.
+
+ - 🛠 Check GZIP compression
+ 
+ - :book: Check Brotli Compression
+ 
+ - :book: Can I use... Brotli
+ 
+⬆ Trở về đầu trang
+
+## Hiệu năng và  JS Frameworks
+
+**Angular**
+
+ - :book: Angular Performance Checklist
+ 
+**React**
+ - :book: Optimizing Performance - React
+ 
+ - :book: React image manipulation | Cloudinary
+ 
+ - :book: Debugging React performance with React 16 and Chrome Devtools.
+ 
+**Vue**
+
+## Hiệu năng và CMS
+
+**WordPress**
+
+ - 🛠 Test Your Website Speed | WordPress Hosting by @WPEngine
+
+**Articles**
+
+ - :book: 19 Tips to Speed Up WordPress Performance (Updated)
+ 
+ - :book:  Speed Up Your WordPress - How to Save Images Optimized for Web
+ 
+**Plugins recommended** 
+
+ - 🛠 Caching Plugin for WordPress - Speed up your website with WP Rocket
+ 
+ - 🛠 WP-Sweep | WordPress.org
+   
+ - 🛠 WP-Sweep | WordPress.org
+ 
+**Dịch giả**
+
+The Front-End Performance Checklist muốn có dưới dạng ngôn ngữ khác ! Đừng ngần ngại gửi đóng góp của bạn!
+
+**Đóng góp**
+
+**Mở một issue hoặc pull request  để đề xuất thay đổi hoặc bổ sung.**
+
+**Hỗ trỡ**
+
+Nếu bạn có bất kỳ câu hỏi hoặc đề nghị, đừng ngần ngại sử dụng Discord hoặc Twitter:
+
+**Tác giả**
+
+Xây dựng bằng :heart: bởi David Dias tại @influitive :canada:
+
+**Người đóng góp**
+
+Dự án này tồn tại nhờ tất cả những người đóng góp.
+
+**Người ủng hộ**
+
+Cảm ơn tất cả những người ủng hộ chúng tôi!
+
+**Nhà tài trợ**
+
+Hỗ trợ dự án này bằng cách trở thành nhà tài trợ. Logo của bạn sẽ hiển thị ở đây với một liên kết đến trang web của bạn.
+
+**Giấy phép**
+
+MIT
+
+Tất cả các biểu tượng được cung cấp bởi Icons8
+
+⬆ Trở về đầu trang
+
+ 
+
+ 
+ 
+  
+  
+
 
 
  
