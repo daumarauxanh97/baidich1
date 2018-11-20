@@ -574,6 +574,15 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
  _Tại sao_
  
  <JavaScript chặn phân tích cú pháp bình thường của tài liệu HTML, vì vậy khi trình phân tích cú pháp đạt đến thẻ `<script>` (đặc biệt là bên trong <head>), nó dừng lại để tìm nạp và chạy nó. Việc thêm `async` hoặc `defer` được khuyến nghị cao nếu tập lệnh của bạn được đặt ở đầu trang nhưng ít có giá trị hơn ngay trước thẻ `</ body>` của bạn. Nhưng thực tiễn tốt là luôn sử dụng các thuộc tính này để tránh bất kỳ vấn đề hiệu suất nào.
+ 
+ _Làm như thế nào_
+ 
+ >⁃ Thêm `async` (nếu tập lệnh không dựa vào các tập lệnh khác) hoặc `defer` (nếu tập lệnh dựa vào hoặc được dựa vào bởi tập lệnh không đồng bộ) làm thuộc tính cho thẻ tập lệnh của bạn.<br>
+⁃ Nếu bạn có tập lệnh nhỏ, có thể sử dụng vị trí tập lệnh nội tuyến phía trên các tập lệnh không đồng bộ
+
+
+ 
+ 
 
 
 
