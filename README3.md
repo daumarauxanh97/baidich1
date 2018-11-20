@@ -388,7 +388,12 @@ _Làm như thế nào_
   
   - :book: Can I use... WOFF2
   
-### Sử dụng `preconnect` để load fonts nhanh hơn  ![medium]
+### Sử dụng `preconnect` để load fonts nhanh hơn 
+
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+```
+
   
   
   
