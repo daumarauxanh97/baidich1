@@ -440,6 +440,149 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
   -Sử dụng SVG<br>
   -Sử dụng công cụ và chỉ định mức nén dưới 85.
   
+  - :book: Tối ưu hóa hình | Web Fundamentals | Google Developers
+  
+  - :book: Tối ưu hóa hình ảnh cơ bản - Sách điện tử của Addy Osmani
+  
+  - 🛠 TinyJPG - Nén ảnh JPEG một cách thông minh
+  
+  - 🛠 Kraken.io - Trình tối ưu hóa hình ảnh trực tuyến
+  
+  - 🛠 Compressor.io - tối ưu hóa và nén ảnh JPEG và hình ảnh PNG
+  
+  - 🛠 Cloudinary - Công cụ phân tích hình ảnh 
+  
+  - 🛠 SVGOMG - Tối ưu hóa các tệp đồ họa vector SVG
+
+**Định dạng hình ảnh** Chọn định dạng hình ảnh của bạn một cách thích hợp.
+
+ _Tại sao_
+ 
+ >Để đảm bảo rằng hình ảnh của bạn không làm chậm trang web của bạn, hãy chọn định dạng tương ứng với hình ảnh của bạn. Nếu đó là ảnh, trong hầu hết trường hợp JPEG phù hợp hơn PNG hoặc GIF. Nhưng đừng quên tìm kiếm một định dạng nex-gen có thể giảm kích thước tệp của bạn. Mỗi định dạng hình ảnh đều có ưu và khuyết điểm, điều quan trọng là phải biết những điều này để đưa ra lựa chọn tốt nhất có thể.
+ 
+ _Làm như thế nào_
+ 
+ >⁃ Sử dụng Lighthouse để xác định hình ảnh cuối cùng nào có thể sử dụng định dạng next-gen (như JPEG 2000m JPEG XR hoặc WebP)<br>
+⁃ So sánh các định dạng khác nhau, đôi khi sử dụng PNG8 tốt hơn PNG16, đôi khi không phải.
+
+ - :book: Phục vụ hình ảnh trong định dạng thế hệ tiếp theo | Công cụ dành cho nhà phát triển web | Google Developers
+ 
+ - :book: Định dạng hình ảnh phù hợp cho trang web của bạn là gì? - SitePoint
+ 
+ - :book: PNG8 - The Clear Winner — SitePoint
+ 
+ - :book: 8-bit so với 16 bit - Độ sâu màu nào bạn nên sử dụng và tại sao nó lại quan trọng - DIY Photography
+ 
+**Sử dụng hình ảnh vector vs raster / bitmap:** Ưu tiên sử dụng hình ảnh vector thay vì hình ảnh bitmap (nếu có thể).
+
+ _Tại sao_
+ 
+ >Hình ảnh vector (SVG) có xu hướng nhỏ hơn hình ảnh và SVG có độ nhạy và tỷ lệ hoàn hảo. Những hình ảnh này có thể được tạo và chỉnh sửa bởi CSS.
+ 
+**Ảnh đa chiều** Đặt thuộc tính `width` và `heigh` trên `<img>` nếu  biết trước kích thước hình ảnh được hiển thị cuối cùng.
+
+ _Tại sao_
+ 
+ >Nếu chiều cao và chiều rộng được đặt, không gian cần thiết cho hình ảnh được đặt trước khi trang được tải. Tuy nhiên, không có các thuộc tính này, trình duyệt không biết kích thước của hình ảnh và không thể đặt trước khoảng trống thích hợp cho nó. Kết quả sẽ là bố cục trang sẽ thay đổi trong khi tải (trong khi tải hình ảnh).
+ 
+**Tránh sử dụng ảnh Base64** Cuối cùng, bạn có thể chuyển đổi những hình ảnh nhỏ thành base64 nhưng nó thực sự không phải là tốt nhất.
+
+  - :book: Mã hóa và hiệu năng Base64, Phần 1 và 2 của Harry Roberts
+  
+  - :book: Một cái nhìn gần hơn về hiệu suất hình ảnh Base64 – The Page Not Found Blog
+   
+  - :book: Khi nào mã hóa base64 image (và khi nào không) | David Calhoun
+    
+  - :book: Hình ảnh mã hóa Base64 cho các trang nhanh hơn | Hiệu suất và yếu tố seo
+  
+**Lazy loading:** Các hình ảnh trên màn hình được tải chậm chạp (Một noscript dự phòng luôn được cung cấp).
+ 
+ _Tại sao_
+ 
+ >Nó sẽ cải thiện thời gian phản hồi của trang hiện tại và sau đó tránh tải các hình ảnh không cần thiết mà người dùng có thể không cần.
+ 
+ _Làm như thế nào_
+ 
+ >⁃ Sử dụng Lighthouse để xác định có bao nhiêu hình ảnh bị tắt.<br>
+⁃ Sử dụng plugin JavaScript như sau để tải hình ảnh của bạn xuống. Đảm bảo bạn chỉ nhắm mục tiêu hình ảnh ngoài màn hình.<br>
+⁃ Ngoài ra, hãy đảm bảo tải xuống các hình ảnh thay thế được hiển thị khi di chuột qua hoặc các hành động của người dùng khác.
+
+ - 🛠 verlok/lazyload: GitHub
+ 
+ - 🛠 aFarkas/lazysizes: GitHub
+ 
+ - :book: Lazy Loading Images and Video  |  Web Fundamentals  |  Google Developers
+ 
+ - :book: 5 Brilliant Ways to Lazy Load Images For Faster Page Loads - Dynamic Drive Blog
+ 
+**Ảnh Responsive**: Đảm bảo hình ảnh gần với kích thước hiển thị của bạn. 
+  
+  _Tại sao_
+ 
+  >Các thiết bị nhỏ không cần hình ảnh lớn hơn chế độ xem của chúng. Bạn nên có nhiều phiên bản của một hình ảnh trên các kích thước khác nhau
+  
+  _Làm như thế nào_
+  
+  >⁃ Tạo các kích thước hình ảnh khác nhau cho các thiết bị bạn muốn nhắm tới.<br>
+⁃ Sử dụng `srcset` và `pictures` để đưa ra nhiều biến thể của mỗi hình ảnh.
+
+ - :book: Responsive images - Learn web development | MDN
+ 
+⬆ Trở về đầu trang
+
+## JavaScript 
+
+**Tối thiểu hóa JS**: Tất cả các tệp JavaScript được rút gọn, nhận xét, khoảng trắng và dòng mới sẽ bị xóa khỏi tệp sản phẩm (vẫn hợp lệ nếu sử dụng HTTP / 2).
+ 
+ _Tại sao_
+ 
+ >Xóa tất cả Khoảng trống, nhận xét và ngắt không cần thiết sẽ giảm kích thước tệp JavaScript của bạn và tăng tốc thời gian tải trang của trang web của bạn và rõ ràng là làm giảm tải cho người dùng của bạn.
+ 
+ _Làm như thế nào_
+ 
+ >⁃ Sử dụng các công cụ được đề xuất bên dưới để giảm thiểu các tệp của bạn tự động trước hoặc trong quá trình xây dựng hoặc triển khai của bạn.
+ 
+  - 🛠 uglify-js - npm
+  
+  - 🛠 Trình nén JavaScript trực tuyến
+  
+  - :book: Short read: How is HTTP/2 different? Should we still minify and concatenate?
+  
+**Không javascript bên trong** (Chỉ hợp lệ cho trang web) Tránh có nhiều mã JavaScript được nhúng ở giữa phần thân của bạn. Tập hợp lại mã JavaScript của bạn bên trong các tệp bên ngoài hoặc cuối cùng trong `<head>` hoặc ở cuối trang của bạn (trước `</ body>`).
+
+  _Tại sao_
+  
+  <
+ 
+ >Việc đặt mã nhúng JavaScript trực tiếp vào `<body>` có thể làm chậm trang của bạn vì nó tải trong khi DOM đang được tạo. Tùy chọn tốt nhất là sử dụng các tệp bên ngoài với `async` hoặc `defer` để tránh chặn DOM. Một tùy chọn khác là đặt một số tập lệnh bên trong `<head>` của bạn. Hầu hết mã phân tích thời gian hoặc tập lệnh nhỏ cần tải trước khi DOM tới phần xử lý chính.
+ 
+  _Làm như thế nào_
+  
+  >Đảm bảo rằng tất cả các tệp của bạn được tải bằng cách sử dụng `async` hoặc `defer` và quyết định một cách khôn ngoan mã mà bạn sẽ cần đưa vào <head> của bạn.
+    
+   - :book: 11 mẹo tối ưu hóa JavaScript và cải thiện tốc độ tải trang web
+   
+**Non-blocking JavaScript:** Các tệp JavaScript được tải không đồng bộ bằng cách sử dụng `async` hoặc deferred sử dụng thuộc tính `defer`.
+
+```html
+<!-- Defer Attribute -->
+<script defer src="foo.js"></script>
+
+<!-- Async Attribute -->
+<script async src="foo.js"></script>
+```
+ _Tại sao_
+ 
+ <JavaScript chặn phân tích cú pháp bình thường của tài liệu HTML, vì vậy khi trình phân tích cú pháp đạt đến thẻ `<script>` (đặc biệt là bên trong <head>), nó dừng lại để tìm nạp và chạy nó. Việc thêm `async` hoặc `defer` được khuyến nghị cao nếu tập lệnh của bạn được đặt ở đầu trang nhưng ít có giá trị hơn ngay trước thẻ `</ body>` của bạn. Nhưng thực tiễn tốt là luôn sử dụng các thuộc tính này để tránh bất kỳ vấn đề hiệu suất nào.
+
+
+
+
+  
+  
+ 
+ 
+  
  
  
    
