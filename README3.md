@@ -381,3 +381,7 @@ _Làm như thế nào_
   - :book: WOFF 2.0 –Hiểu biết thêm về thế hệ tiếp theo Web Font Format và chuyển đổi TTF xang WOFF2
   
   - :tool: Tự tạo @font-face Kits » Font Squirrel
+  
+  - :tool: IcoMoon App - Icon Font, SVG, PDF & PNG Generator
+  
+  
