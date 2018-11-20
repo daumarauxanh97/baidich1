@@ -25,7 +25,7 @@ Tất cả các mục trong Checklist kiểm tra hiệu suất mặt trước l�
 LOW có nghĩa là danh mục con ưu tiên thấp.
 
 
-MEDIUM có nghĩa là danh mục được ưu tiên mức trung bình, bạn nên xử lý và sắp xếp những danh mục con này
+![medium] có nghĩa là danh mục được ưu tiên mức trung bình, bạn nên xử lý và sắp xếp những danh mục con này
 
 
 HIGH có nghĩa là danh mục con được ưu tiên cao. Bạn không thể tránh tuân thủ theo những quy tắc đó và cần thực hiện những phương pháp để sửa chữa.
