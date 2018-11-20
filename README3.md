@@ -1,4 +1,46 @@
 
+<h1 align="center">
+<br>
+  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist"><img src="https://raw.githubusercontent.com/thedaviddias/Front-End-Performance-Checklist/master/images/logo-front-end-performance-checklist.jpg" alt="Front-End Performance Checklist" width="170"></a>
+  <br>
+    <br>
+  Front-End Performance Checklist
+  <br>
+</h1>
+
+<h4 align="center">🎮 The only Front-End Performance Checklist that runs faster than the others.</h4>
+<p align="center">One simple rule: "Design and code with performance in mind"</p>
+
+<p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+  </a>
+  <a href="https://discord.gg/btHQRkm">
+    <img src="https://img.shields.io/badge/chat-on_discord-4837E2.svg?style=flat-square" alt="Discord">
+  </a>
+    <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Licence MIT">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="http://feedback.frontendchecklist.io/">Roadmap</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Product Hunt</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/JohnsenZhou/Front-End-Performance-Checklist">🇨🇳</a>
+  <a href="https://github.com/WilliamDASILVA/Front-End-Performance-Checklist">🇫🇷</a>
+  <a href="https://github.com/ParkSB/Front-End-Performance-Checklist">🇰🇷</a>  
+  <a href="https://github.com/fernandofawkes/Front-End-Performance-Checklist">🇵🇹</a>
+  <a href="https://github.com/lex111/Front-End-Performance-Checklist">🇷🇺</a>
+</p>
+
+<p align="center">
+    <span>Other Checklists:</span>
+    <br>
+  🗂 <a href="https://github.com/thedaviddias/Front-End-Checklist#---------front-end-checklist-">Front-End Checklist</a> • 💎 <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">Front-End Design Checklist</a>
+</p>
+
 ## Mục Lục
 1. HTML
 2. CSS
