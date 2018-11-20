@@ -343,10 +343,10 @@ Bằng cách : Luôn sử dụng biểu định kiểu bên ngoài hoặc nhúng
 📖 Quan sát thực tiễn tốt nhất của CSS: Tránh các kiểu nội tuyến CSS
 
 
-Phân tích độ phức tạp của stylesheets : Phân tích các stylesheets  của bạn có thể giúp bạn gắn cờ các vấn đề, dư thừa và các bộ chọn CSS trùng lặp.
+Phân tích độ phức tạp của stylesheets : Phân tích bảng định kiểu của bạn có thể giúp bạn đánh dấu các vấn đề dư thừa và bộ chọn CSS trùng lặp.
 
 
-Lý do:Đôi khi bạn có thể có lỗi thừa hoặc lỗi xác thực trong CSS, phân tích các tệp CSS của bạn và xóa những phức tạp này có thể giúp bạn tăng tốc các tệp CSS (vì trình duyệt của bạn sẽ đọc nhanh hơn) 
+Lý do: Đôi khi bạn có thể có lỗi thừa hoặc lỗi xác thực trong CSS, phân tích các tệp CSS của bạn và xóa những thứ phức tạp này có thể giúp bạn tăng tốc các tệp CSS (vì trình duyệt của bạn sẽ đọc nhanh hơn) 
 
 
 Bằng cách: CSS của bạn nên được tổ chức, bằng cách sử dụng một bộ tiền xử lý CSS có thể giúp bạn với điều đó. Một số công cụ trực tuyến được liệt kê bên dưới cũng có thể giúp bạn phân tích và sửa mã của bạn.
@@ -358,7 +358,7 @@ Bằng cách: CSS của bạn nên được tổ chức, bằng cách sử dụn
 🛠 Thống kê CSS
 
 
-🛠 macbre / analysis-css: Bộ chọn CSS phức tạp và phân tích hiệu suất
+🛠 macbre / analysis-css: Bộ chọn CSS complexity và phân tích hiệu suất
 
 
 🛠 Dự án Wallace giống như Thống kê CSS nhưng lưu trữ số liệu thống kê theo thời gian để bạn có thể theo dõi các thay đổi của mình
@@ -380,4 +380,4 @@ _Làm như thế nào_
 >Kiểm tra trước khi mua phông chữ mới xem nhà cung cấp cung cấp cho bạn định dạng WOFF2. Nếu bạn đang sử dụng phông chữ miễn phí, bạn luôn có thể sử dụng Font Squirrel để tạo tất cả các định dạng bạn cần.
   - :book: WOFF 2.0 –Hiểu biết thêm về thế hệ tiếp theo Web Font Format và chuyển đổi TTF xang WOFF2
   
-  - 🛠 Tự tạo @font-face Kits » Font Squirrel
+  - :tool: Tự tạo @font-face Kits » Font Squirrel
