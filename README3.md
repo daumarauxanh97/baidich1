@@ -9,7 +9,7 @@
 </h1>
 
 <h4 align="center">🎮 The only Front-End Performance Checklist that runs faster than the others.</h4>
-<p align="center">One simple rule: "Design and code with performance in mind"</p>
+<p align="center">Một số quy tắc đơn gian: "Thiết kế và code với hiệu suất cao nhất"</p>
 
 <p align="center">
   <a href="http://makeapullrequest.com">
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="http://feedback.frontendchecklist.io/">Roadmap</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Product Hunt</a>
+  <a href="#how-to-use">Hướng dẫn</a> • <a href="#contributing">Đóng góp</a> • <a href="http://feedback.frontendchecklist.io/">Roadmap</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Tìm kiếm dự án khác</a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@
 </p>
 
 <p align="center">
-    <span>Other Checklists:</span>
+    <span>Những Checklist khác:</span>
     <br>
   🗂 <a href="https://github.com/thedaviddias/Front-End-Checklist#---------front-end-checklist-">Front-End Checklist</a> • 💎 <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">Front-End Design Checklist</a>
 </p>
@@ -62,21 +62,21 @@ Hiệu năng là một chủ đề lớn, nhưng không phải lúc nào cũng l
 
 Đối với mỗi quy tắc, bạn sẽ có một đoạn giải thích lý do tại sao quy tắc này quan trọng và các bạn có thể khắc phục nó. Để biết thêm thông tin chi tiết, bạn nên tìm các liên kết trỏ tới 🛠 tools, 📖 articles hoặc 📹 medias để có thể hoàn thành Checklist.
 
-Tất cả các mục trong Checklist kiểm tra hiệu suất mặt trước là những yếu tố cần thiết để đạt được điểm hiệu suất cao nhất nhưng bạn sẽ tìm thấy chỉ thị để giúp bạn ưu tiên một số quy tắc khác. Có 3 mức độ ưu tiên:
+Tất cả các mục trong Front-End Performance Checklist là những yếu tố cần thiết để đạt được điểm hiệu suất cao nhất nhưng bạn sẽ tìm thấy một chỉ số để giúp bạn biết quy tắc nào ưu tiên hơn những quy tắc khác. Có 3 mức độ ưu tiên:
 
-- LOW có nghĩa là danh mục con ưu tiên thấp.
+- LOW có nghĩa là danh mục có độ ưu tiên thấp.
 
 
 - MEDIUM có nghĩa là danh mục được ưu tiên mức trung bình, bạn nên xử lý và sắp xếp những danh mục con này
 
 
-- HIGH có nghĩa là danh mục con được ưu tiên cao. Bạn không thể tránh tuân thủ theo những quy tắc đó và cần thực hiện những phương pháp để sửa chữa.
+- HIGH có nghĩa là danh mục có độ ưu tiên cao. Bạn không thể tránh tuân thủ theo những quy tắc đó và cần thực hiện những phương pháp để sửa chữa.
 
 
-## Hiệu năng tools
+## Những công cụ đánh giá hiệu suất
 
 
-Danh sách công cụ bạn nên sử dụng để kiểm thử màn hinh, website hoặc ứng dụng của bạn
+Danh sách công cụ bạn nên sử dụng để kiểm tra , website hoặc ứng dụng của bạn
 
 
 - 🛠 WebPagetest - Kiểm tra tối ưu hóa hiệu suất và tối ưu hóa trang web
@@ -135,7 +135,7 @@ Danh sách công cụ bạn nên sử dụng để kiểm thử màn hinh, websi
 ## Tài liệu tham khảo
 
 
-- 📹 Chi phí của JavaScript - YouTube (phiên bản text)
+- 📹 Giá trị của JavaScript - YouTube (phiên bản text)
 
 
 - AddyOsmani.com - Bắt đầu Lập ngân sách Hiệu suất
@@ -147,13 +147,13 @@ Danh sách công cụ bạn nên sử dụng để kiểm thử màn hinh, websi
 - 📖 Trạng thái của Web | 2018_01_01
 
 
-- 📖 Độ nặng của trang không quan trọng
+- 📖 Dung lượng của trang không quan trọng
 
 
 - 📖 Hiệu năng Checklist Front-End 2018 [PDF, Apple Pages]
 
 
-- 📖 Thiết kế cho hiệu suất Cân nặng thẩm mỹ và tốc độ - Bởi Lara Callender Hogan [eBook, In]
+- 📖 Thiết kế cho cân bằng giữa thẩm mỹ và tốc độ - Bởi Lara Callender Hogan [eBook, In]
 
 
 - 📖 Varvy - Thuật ngữ hiệu suất Web
@@ -171,7 +171,7 @@ Danh sách công cụ bạn nên sử dụng để kiểm thử màn hinh, websi
 ## HTML
 
 
-**HTML được rút gọn:** trung bình Mã HTML được rút gọn, các chú thích, khoảng trắng và các dòng mới sẽ bị xóa khỏi các tệp khi xuất bản.
+**HTML được rút gọn:** trung bình code HTML được rút gọn, các chú thích, khoảng trắng và các dòng mới sẽ bị xóa khỏi các tệp khi xuất bản.
 
 
 _Tại sao_
@@ -183,7 +183,7 @@ _Tại sao_
 _Làm Như thế nào_
 
 
->Hầu hết các khung công tác đều có các plugin để tạo điều kiện tối giản hóa các trang web. Bạn có thể sử dụng một loạt các mô-đun NPM có thể thực hiện công việc cho bạn một cách tự động.
+>Hầu hết các  framework đều có các plugin để tạo điều kiện tối giản hóa các trang web. Bạn có thể sử dụng một loạt các mô-đun NPM có thể thực hiện công việc cho bạn một cách tự động.
 
 
   - 🛠 Trình chỉnh sửa HTML | Giảm bớt code
@@ -195,11 +195,11 @@ _Làm Như thế nào_
   - 📖 Thử nghiệm với trình chỉnh sửa HTML - Sự tiêu diệt hoàn hảo
 
 
-**Xóa các nhận xét không cần thiết:** Đảm bảo rằng các nhận xét được xóa khỏi các trang của bạn.
+**Xóa các nhận xét không cần thiết:**![low] Đảm bảo rằng các nhận xét được xóa khỏi các trang của bạn.
 
 _Tại sao_
 
->Nhận xét không thực sự hữu ích cho người dùng và phải bị xóa khỏi tệp sản phẩm. Một trường hợp bạn muốn giữ lại các bình luận có thể là nếu bạn cần giữ lại nguồn gốc cho một thư viện.
+>Nhận xét không thực sự hữu ích cho người dùng và nên xóa khỏi tệp sản phẩm. Một trường hợp bạn muốn giữ lại các bình luận có thể là nếu bạn cần giữ lại nguồn gốc cho một thư viện.
 
 _Làm Như thế nào_
 
@@ -207,7 +207,7 @@ _Làm Như thế nào_
 
 - 🛠 remove-html-comments - npm
 
-Loại bỏ các thuộc tính không cần thiết: Gõ các thuộc tính như `type = "text / javascript"` hoặc `type = "text / css"`.
+Loại bỏ các thuộc tính không cần thiết: Gỡ  các thuộc tính như `type = "text / javascript"` hoặc `type = "text / css"`.
 
 ```
 <!-- Before HTML5 -->
@@ -234,7 +234,7 @@ _Làm Như thế nào_
   - 📖 Thẻ Script | CSS-Tricks
 
   
-**Luôn đặt thẻ CSS trước thẻ JavaScript:** Và nhớ đảm bảo rằng CSS của bạn luôn được tải trước khi có mã JavaScript.
+**Luôn đặt thẻ CSS trước thẻ JavaScript:** Và nhớ đảm bảo rằng CSS của bạn luôn được tải trước code JavaScript.
 
 ```
 <!-- Not recommended -->
@@ -250,18 +250,18 @@ _Làm Như thế nào_
 
  _Tại sao_ 
  
- >thẻ css tags được đặt trước Javascript sẽ giúp tăng tốc thời gian hiển thị của trình duyệt.
+ > Các thẻ css được đặt trước Javascript sẽ giúp tăng tốc thời gian hiển thị của trình duyệt.
 
 
 _Làm Như thế nào_
 
->Đảm bảo rằng <link> và <style> trong <head> của bạn luôn ở trước <script>.
+> Đảm bảo rằng <link> và <style> trong <head> của bạn luôn ở trước <script>.
   
 
   - 📖 Các kiểu Order và script của bạn cho pagespeed
 
 
-**Giảm thiểu số iframe:** Chỉ sử dụng iframe nếu bạn không có khả năng kỹ thuật nào khác. Cố gắng tránh ifram nhiều nhất có thể.
+**Giảm thiểu số iframe:** Chỉ sử dụng iframe nếu bạn không có khả năng kỹ thuật nào khác. Cố gắng tránh iframe nhiều nhất có thể.
 
 
 ⬆ Về đầu trang.
@@ -281,7 +281,7 @@ _Làm Như thế nào_
 >Sử dụng công cụ giảm thiểu những file tự động trước hoặc trọng khi sản phẩm của bạn được phát triển
 
 
-  - 🛠 cssnano: A một mô đun rút gọn theo hệ sinh thái PostCSS. - cssnano
+  - 🛠 cssnano:  một mô đun rút gọn theo hệ thống PostCSS. - cssnano
 
 
   - 🛠 @neutrinojs/style-minify - npm
@@ -318,7 +318,7 @@ _Làm Như thế nào_
   - 📖 Các phương pháp hay nhất về hiệu năng trong kỷ nguyên HTTP / 2
 
 
-**Không chặn:** tệp CSS cần phải không bị chặn để ngăn DOM lấy thời gian tải.
+**Không chặn:** tệp CSS cần phải không bị chặn để ngăn mất thời gian tải DOM .
 
 ```
 <link rel="preload" href="global.min.css" as="style" onload="this.rel='stylesheet'">
@@ -367,7 +367,7 @@ _Làm Như thế nào_
 
  _Làm Như thế nào_ 
  
- >⁃ ⚠️ Luôn kiểm tra xem CSS khung bạn muốn sử dụng chưa có mã reset  / chuẩn hóa chưa. Đôi khi bạn có thể không cần mọi thứ nằm trong tệp reset  / chuẩn hóa của bạn.
+ >⁃ ⚠️ Luôn kiểm tra xem framework CSS  bạn muốn sử dụng chưa có mã reset  / chuẩn hóa chưa. Đôi khi bạn có thể không cần mọi thứ nằm trong tệp reset  / chuẩn hóa của bạn.
 
   - 🛠 UnCSS Online
 
@@ -386,7 +386,7 @@ _Làm Như thế nào_
 
  _Tại sao_ 
  
- >Inlining CSS quan trọng giúp tăng tốc độ hiển thị của các trang web làm giảm số lượng yêu cầu đến máy chủ.
+ > Đặt CSS Critial inline  giúp tăng tốc độ hiển thị của các trang web làm giảm số lượng yêu cầu đến máy chủ.
 
 
  _Làm Như thế nào_
