@@ -388,11 +388,63 @@ _Làm như thế nào_
   
   - :book: Can I use... WOFF2
   
-### Sử dụng `preconnect` để load fonts nhanh hơn 
+**Sử dụng `preconnect` để load fonts nhanh hơn** 
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ```
+ _Tại sao_
+ 
+ >Khi bạn truy cập trang web, thiết bị của bạn cần phải tìm hiểu nơi trang web của bạn hoạt động và máy chủ nào cần kết nối. Trình duyệt của bạn phải liên hệ với một máy chủ DNS và chờ tra cứu hoàn tất trước khi tìm nạp tài nguyên (phông chữ, tệp CSS ...). Việc tìm nạp trước và kết nối trước cho phép trình duyệt tìm kiếm thông tin DNS và bắt đầu thiết lập kết nối TCP tới máy chủ lưu trữ tệp phông chữ. Điều này mang lại hiệu suất tăng lên bởi vì khi trình duyệt phân tích tệp css với thông tin phông chữ và phát hiện ra nó cần yêu cầu tệp phông chữ từ máy chủ, nó sẽ có sẵn thông tin DNS đã được giải quyết trước và có kết nối mở đến máy chủ sẵn sàng trong nhóm kết nối của nó.
+ 
+ _Làm như thế nào_
+ 
+ > ⁃ Trước khi tìm nạp trước các webfont của bạn, hãy sử dụng webpagetest để đánh giá trang web của bạn<br>
+⁃ Tìm kiếm tra cứu DNS màu teal và đánh dấu máy chủ đang được yêu cầu<br>
+⁃ Tìm nạp các webfont của bạn trong <head> và thêm cuối cùng các tên máy chủ mà bạn cũng nên tìm nạp trước
+ 
+   - :book: Google fonts nhanh hơn với Preconnect - CDN Planet
+   
+   - :book: Làm cho trang web của bạn nhanh hơn với Preconnect Hints | Viget
+   
+   - :book: Hướng dẫn về các gợi ý trình duyệt: Tải trước, Tìm nạp trước và Kết nối trước - MachMetrics Speed Blog
+   
+   - :book: Hướng dẫn toàn diện về các chiến lược tải phông chữ—zachleat.com 
+   
+   - 🛠   typekit/webfontloader: Web Font Loader gives you added control when using linked fonts via @font-face.
+   
+ **Kích cỡ webfont**:Kích thước webfont không vượt quá 300kb (bao gồm tất cả các biến)
+ 
+  - :book: Font Bytes - Page Weight
+  
+Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đến khi Webfont được tải
+
+  - :book: `font-display`dành cho Masses
+  
+  - :book: CSS font-display: Tương lai của Font Rendering trên Web
+  
+ ⬆ Trở về đầu trang
+ 
+  - :book: Image Bytes in 2018
+  
+ **Tối ưu hóa hình ảnh** : Hình ảnh của bạn được tối ưu hóa, được nén mà không ảnh hưởng trực tiếp đến người dùng cuối.
+ 
+  _Tại sao_
+  
+  >Hình ảnh được tối ưu hóa tải nhanh hơn trên trình duyệt và tốn ít dung lượng hơn
+  
+  _Làm như thế nào_
+  
+  >-Cố gắng sử dụng hiệu ứng css3 khi có thể(thay vì sử dụng ảnh nhỏ)<br>
+  -Khi có thể, hãy sử dụng phông chữ thay vì văn bản được mã hóa trong hình ảnh của bạn<br>
+  -Sử dụng SVG<br>
+  -Sử dụng công cụ và chỉ định mức nén dưới 85.
+  
+ 
+ 
+   
+   
+ 
 
   
   
