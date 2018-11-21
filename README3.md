@@ -47,36 +47,36 @@
 3. Fonts
 4. Images
 5. JavaScript
-6. Server (trong tiến trình)
-7. JS Frameworks (trong tiến trình)
+6. Server (Đang thực hiện)
+7. JS Frameworks (Đang thực hiện)
 
 
 ## Giới thiệu
 
 
-Hiệu năng là một chủ đề lớn, nhưng không phải lúc nào cũng là chủ đề "back-end" hoặc "admin": Đó cũng là một phần trách nhiệm của Front-end nữa Danh sách kiểm tra hiệu suất Front-End là một Checklist đầy đủ các yếu tố tiên quyết cần phải kiểm tra hoặc ít nhất là nhận thức được, như một nhà phát triển Front-End và áp dụng cho dự án của bạn (cá nhân và chuyên nghiệp).
+Hiệu năng là một chủ đề lớn, nhưng không phải lúc nào cũng là chủ đề "back-end" hoặc "admin": Đó cũng là một phần trách nhiệm của Front-end nữa.Front-End Performance Checklist là một danh sách đầy đủ các yếu tố tiên quyết cần phải kiểm tra hoặc ít nhất là nhận thức được, như một Front-End developer và áp dụng cho dự án của bạn (cá nhân và chuyên nghiệp).
 
 
 ## Làm thế nào để sử dụng ?
 
 
-Đối với mỗi quy tắc, bạn sẽ có một đoạn giải thích lý do tại sao quy tắc này quan trọng và các bạn có thể khắc phục nó. Để biết thêm thông tin chi tiết, bạn nên tìm các liên kết trỏ tới 🛠 tools, 📖 articles hoặc 📹 medias để có thể hoàn thành Checklist.
+Đối với mỗi quy tắc, bạn sẽ có một đoạn giải thích lý do tại sao quy tắc này quan trọng và các bạn có thể khắc phục nó. Để biết thêm thông tin chi tiết, bạn nên tìm các liên kết trỏ tới các công cụ 🛠,các bài viết 📖 hoặc các media 📹 để có thể hoàn thành Checklist.
 
-Tất cả các mục trong Checklist kiểm tra hiệu suất mặt trước là những yếu tố cần thiết để đạt được điểm hiệu suất cao nhất nhưng bạn sẽ tìm thấy chỉ thị để giúp bạn ưu tiên một số quy tắc khác. Có 3 mức độ ưu tiên:
+Tất cả các mục trong Front-End Performance Checklist là những yếu tố cần thiết để đạt được điểm hiệu suất cao nhất nhưng bạn sẽ tìm thấy chỉ số để giúp bạn ưu tiên một số quy tắc khác. Có 3 mức độ ưu tiên:
 
-- LOW có nghĩa là danh mục con ưu tiên thấp.
-
-
-- MEDIUM có nghĩa là danh mục được ưu tiên mức trung bình, bạn nên xử lý và sắp xếp những danh mục con này
+- LOW có nghĩa là mục con ưu tiên thấp.
 
 
-- HIGH có nghĩa là danh mục con được ưu tiên cao. Bạn không thể tránh tuân thủ theo những quy tắc đó và cần thực hiện những phương pháp để sửa chữa.
+- MEDIUM có nghĩa là mục được ưu tiên mức trung bình, bạn nên xử lý và sắp xếp những mục con này
 
 
-## Hiệu năng tools
+- HIGH có nghĩa là mục con được ưu tiên cao. Bạn không thể tránh tuân thủ theo những quy tắc đó và cần thực hiện những phương pháp để sửa chữa.
 
 
-Danh sách công cụ bạn nên sử dụng để kiểm thử màn hinh, website hoặc ứng dụng của bạn
+## Các công cụ cho hiệu suất
+
+
+Danh sách các công cụ bạn có thể sử dụng để test hoặc hiển thị website của bạn hoặc ứng dụng:
 
 
 - 🛠 WebPagetest - Kiểm tra tối ưu hóa hiệu suất và tối ưu hóa trang web
@@ -177,13 +177,13 @@ Danh sách công cụ bạn nên sử dụng để kiểm thử màn hinh, websi
 _Tại sao_
 
 
->Xóa tất cả các khoảng trống, nhận xét và ngắt những câu không cần thiết sẽ giảm kích thước HTML của bạn và tăng tốc thời gian tải trang web của bạn và rõ ràng làm giảm tải xuống cho người dùng của bạn.
+>Xóa tất cả các khoảng trống, nhận xét và ngắt những câu không cần thiết sẽ giảm kích thước HTML của bạn và tăng tốc thời gian tải trang web của bạn và rõ ràng làm giảm bớt việc tải xuống cho người dùng của bạn.
 
 
 _Làm Như thế nào_
 
 
->Hầu hết các khung công tác đều có các plugin để tạo điều kiện tối giản hóa các trang web. Bạn có thể sử dụng một loạt các mô-đun NPM có thể thực hiện công việc cho bạn một cách tự động.
+>Hầu hết các framework đều có các plugin để tối giản hóa các trang web. Bạn có thể sử dụng một loạt các mô-đun NPM có thể thực hiện công việc cho bạn một cách tự động.
 
 
   - 🛠 Trình chỉnh sửa HTML | Giảm bớt code
@@ -195,15 +195,15 @@ _Làm Như thế nào_
   - 📖 Thử nghiệm với trình chỉnh sửa HTML - Sự tiêu diệt hoàn hảo
 
 
-**Xóa các nhận xét không cần thiết:** Đảm bảo rằng các nhận xét được xóa khỏi các trang của bạn.
+**Xóa các comment không cần thiết:** Đảm bảo rằng các comment được xóa khỏi các trang của bạn.
 
 _Tại sao_
 
->Nhận xét không thực sự hữu ích cho người dùng và phải bị xóa khỏi tệp sản phẩm. Một trường hợp bạn muốn giữ lại các bình luận có thể là nếu bạn cần giữ lại nguồn gốc cho một thư viện.
+> Comment không thực sự hữu ích cho người dùng và phải bị xóa khỏi tệp sản phẩm. Một trường hợp bạn muốn giữ lại các comment có thể là nếu bạn cần giữ lại bản gốc cho một thư viện.
 
 _Làm Như thế nào_
 
->Hầu hết trường hợp , nhận xét có thể được xóa bằng cách sử dụng plugin rút gọn HTML.
+>Hầu hết trường hợp , comment có thể được xóa bằng cách sử dụng plugin rút gọn HTML.
 
 - 🛠 remove-html-comments - npm
 
@@ -223,7 +223,7 @@ Loại bỏ các thuộc tính không cần thiết: Gõ các thuộc tính như
 
 _Tại sao_ 
 
->Các thuộc tính type không cần thiết vì HTML5 như text / css và text / javascript là các giá trị mặc định. Code không sử dụng sẽ bị xóa khi không được trang web hoặc ứng dụng của bạn sử dụng .
+>Các thuộc tính type không cần thiết trong HTML5 đã chỉ ra text / css và text / javascript là các giá trị mặc định. Code không sử dụng sẽ bị xóa khi không được trang web hoặc ứng dụng của bạn sử dụng .
 
 
 _Làm Như thế nào_ 
@@ -270,11 +270,11 @@ _Làm Như thế nào_
 ## CSS
 
 
-**Tối thiểu hóa** Tất cả các tệp CSS được rút gọn, nhận xét, khoảng trắng và dòng mới sẽ bị xóa khỏi tệp khi được upload.
+**Tối thiểu hóa** Tất cả các tệp CSS được rút gọn, comment, khoảng trắng và dòng mới sẽ bị xóa khỏi tệp khi được upload.
 
   _Tại sao_ 
   
-  >Khi các tệp CSS được rút gọn, nội dung được tải nhanh hơn và ít dữ liệu hơn được gửi đến máy khách. Điều quan trọng là luôn luôn giảm thiểu các tệp CSS trong quá trình sản xuất. Nó có lợi cho người dùng vì nó là dành cho tất cả những doanh nghiệp muốn giảm chi phí băng thông và sử dụng tài nguyên thấp hơn.
+  >Khi các tệp CSS được rút gọn, nội dung được tải nhanh hơn và ít dữ liệu hơn được gửi đến client. Điều quan trọng là luôn luôn giảm thiểu các tệp CSS trong production. Nó có lợi cho người dùng vì nó là dành cho tất cả những doanh nghiệp muốn giảm chi phí băng thông và sử dụng tài nguyên thấp hơn.
 
 _Làm Như thế nào_ 
 
@@ -318,7 +318,7 @@ _Làm Như thế nào_
   - 📖 Các phương pháp hay nhất về hiệu năng trong kỷ nguyên HTTP / 2
 
 
-**Không chặn:** tệp CSS cần phải không bị chặn để ngăn DOM lấy thời gian tải.
+**Non-blocking:** tệp CSS cần phải ở trạng thái non-blocking để ngăn DOM lấy thời gian tải.
 
 ```
 <link rel="preload" href="global.min.css" as="style" onload="this.rel='stylesheet'">
@@ -342,7 +342,7 @@ _Làm Như thế nào_
   - 📖 Tải trước: Điều gì là tốt nhất? - Tạp chí Smashing
 
 
-**Độ dài của các lớp CSS:** Độ dài của các lớp học của bạn có thể có tác động (nhẹ) trên các tệp HTML và CSS của bạn .
+**Độ dài của các class CSS:** Độ dài của các class của bạn có thể có tác động (nhẹ) trên các tệp HTML và CSS của bạn .
 
  _Tại sao_ 
  
@@ -357,7 +357,7 @@ _Làm Như thế nào_
   - 🛠 Dài so với lớp ngắn · jsPerf
 
 
-**CSS không sử dụng:** phương tiện Xóa các bộ chọn CSS không sử dụng.
+**CSS không sử dụng:** Loại bỏ các selector CSS không sử dụng.
 
 
  _Tại sao_
@@ -412,17 +412,17 @@ _Làm Như thế nào_
 
   _Tại sao_
   
-  >Một trong những lý do là vì đó là một phương pháp hay để phân tách nội dung khỏi thiết kế. Nó cũng giúp bạn có một mã dễ bảo trì hơn và giữ cho trang web của bạn có thể truy cập được. Nhưng liên quan đến hiệu suất, nó đơn giản chỉ vì nó làm giảm kích thước tập tin của các trang HTML của bạn và thời gian tải.
+  >Một trong những lý do là vì đó là một phương pháp hay để phân tách nội dung khỏi thiết kế. Nó cũng giúp bạn có code dễ bảo trì hơn và giữ cho trang web của bạn có thể truy cập được. Nhưng liên quan đến hiệu suất, nó đơn giản chỉ vì nó làm giảm kích thước tập tin của các trang HTML của bạn và thời gian tải.
   
  _Làm Như thế nào_ 
  
- >Luôn sử dụng biểu định kiểu bên ngoài hoặc nhúng CSS trong <head> của bạn (và thực hiện theo các quy tắc hiệu suất CSS khác)
+ >Luôn sử dụng CSS stylesheet ngoài hoặc nhúng CSS trong <head> của bạn (và thực hiện theo các quy tắc hiệu suất CSS khác)
     
    
   - 📖 Quan sát thực tiễn tốt nhất của CSS: Tránh các kiểu nội tuyến CSS
 
 
-**Phân tích độ phức tạp của stylesheets** : Phân tích bảng định kiểu của bạn có thể giúp bạn đánh dấu các vấn đề dư thừa và bộ chọn CSS trùng lặp.
+**Phân tích độ phức tạp của stylesheets** : Phân tích bảng stylesheet của bạn có thể giúp bạn đánh dấu các vấn đề các selector CSS dư thừa và trùng lặp.
 
 
  _Tại sao_
@@ -562,7 +562,7 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
  
  >Hình ảnh vector (SVG) có xu hướng nhỏ hơn hình ảnh và SVG có độ nhạy và tỷ lệ hoàn hảo. Những hình ảnh này có thể được tạo và chỉnh sửa bởi CSS.
  
-**Ảnh đa chiều** Đặt thuộc tính `width` và `heigh` trên `<img>` nếu  biết trước kích thước hình ảnh được hiển thị cuối cùng.
+**Kích thước ảnh** Đặt thuộc tính `width` và `heigh` trên `<img>` nếu  biết trước kích thước hình ảnh được hiển thị cuối cùng.
 
  _Tại sao_
  
@@ -631,13 +631,13 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
   
   - :book: Short read: How is HTTP/2 different? Should we still minify and concatenate?
   
-**Không javascript bên trong** (Chỉ hợp lệ cho trang web) Tránh có nhiều mã JavaScript được nhúng ở giữa phần thân của bạn. Tập hợp lại mã JavaScript của bạn bên trong các tệp bên ngoài hoặc cuối cùng trong `<head>` hoặc ở cuối trang của bạn (trước `</ body>`).
+**Không để JavaScript bên trong** (Chỉ hợp lệ cho trang web) Tránh có nhiều code JavaScript được nhúng ở giữa phần thân của bạn. Tập hợp lại mã JavaScript của bạn bên trong các tệp bên ngoài hoặc cuối cùng trong `<head>` hoặc ở cuối trang của bạn (trước `</ body>`).
 
   _Tại sao_
   
   <
  
- >Việc đặt mã nhúng JavaScript trực tiếp vào `<body>` có thể làm chậm trang của bạn vì nó tải trong khi DOM đang được tạo. Tùy chọn tốt nhất là sử dụng các tệp bên ngoài với `async` hoặc `defer` để tránh chặn DOM. Một tùy chọn khác là đặt một số tập lệnh bên trong `<head>` của bạn. Hầu hết mã phân tích thời gian hoặc tập lệnh nhỏ cần tải trước khi DOM tới phần xử lý chính.
+ >Việc đặt code nhúng JavaScript trực tiếp vào `<body>` có thể làm chậm trang của bạn vì nó tải trong khi DOM đang được tạo. Tùy chọn tốt nhất là sử dụng các tệp bên ngoài với `async` hoặc `defer` để tránh chặn DOM. Một tùy chọn khác là đặt một số tập lệnh bên trong `<head>` của bạn. Hầu hết mã phân tích thời gian hoặc tập lệnh nhỏ cần tải trước khi DOM tới phần xử lý chính.
  
   _Làm như thế nào_
   
@@ -735,7 +735,7 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
   
   _Làm như thế nào_
   
-  >⁃ Tất cả các quy tắc trong Danh sách kiểm tra hiệu năng Front-End sẽ giúp bạn giảm nhiều nhất có thể tài nguyên và mã của bạn.
+  >⁃ Tất cả các quy tắc trong Front-End Performance Checklist sẽ giúp bạn giảm nhiều nhất có thể tài nguyên và code của bạn.
   
   - :book: Page Weight
   
@@ -789,7 +789,7 @@ Ngăn chặn Flash hoặc Văn bản ẩn: Tránh văn bản trong suốt cho đ
  
  - :book:  Google's Web Performance Best Practices #3: Minimize Request Overhead - GlobalDots Blog
  
-**Giảm thiểu yêu cầu HTTP** Luôn đảm bảo rằng mọi tệp được yêu cầu đều cần thiết cho trang web hoặc ứng dụng của bạn.
+**Giảm thiểu request HTTP** Luôn đảm bảo rằng mọi tệp được yêu cầu đều cần thiết cho trang web hoặc ứng dụng của bạn.
 
  - :book: Combine external CSS
  
