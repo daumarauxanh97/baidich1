@@ -564,9 +564,64 @@ Khi một object được yêu cầu tương tự như object hiện có hoặc 
 
 Ví dụ thực tế
 
-Tại một thời điểm một quốc gia chỉ có 1 tổng thống.
+Tại một thời điểm một quốc gia chỉ có 1 tổng thống.Tổng thống phải làm việc, bất cứ khi nào có nhiệm vụ. Tổng thống ở đây là singleton.
 
-                    
+Nói một cách đơn giản
+
+Đảm bảo rằng chỉ có một object của một class cụ thể được tạo ra.
+
+Wikipedia nói là
+
+>Trong lĩnh vực kĩ nghệ phần mềm singleton pattern la một phần mềm design pattern hạn chế sự khởi tạo của một class với một object. Điều này rất hữu ích khi cần chính xác  một object để điều phối các hành động trên toàn hệ thống.
+
+Singleton pattern được coi là một anti-pattern và nên tránh lạm dụng nó . Nó không nhất thiết là xấu và có thể có một số trường hợp sử dụng hợp lệ nhưng nên được sử dụng thận trọng vì nó giới thiệu một trạng thái toàn cầu trong ứng dụng của bạn và thay đổi nó ở một nơi có thể ảnh hưởng đến các khu vực khác và nó có thể trở nên khá khó khăn để gỡ lỗi. Điều tệ hại khác về chúng là nó làm cho mã của bạn được kết hợp quá chặt chẽ cộng với thay đổi singleton có thể khó khăn.
+
+Ví dụ lập trình
+
+
+Để tạo ra một singleton, làm cho constructor private, vô hiệu hóa nhân bản, vô hiệu hóa phần mở rộng và tạo một biến tĩnh để chứa cá thể đó
+
+```php
+final class President
+{
+    private static $instance;
+
+    private function __construct()
+    {
+        // Hide the constructor
+    }
+
+    public static function getInstance(): President
+    {
+        if (!self::$instance) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
+    private function __clone()
+    {
+        // Disable cloning
+    }
+
+    private function __wakeup()
+    {
+        // Disable unserialize
+    }
+}
+```
+Sau đó để sử dụng
+
+```php
+$president1 = President::getInstance();
+$president2 = President::getInstance();
+
+var_dump($president1 === $president2); // true
+```
+
+
+
 
 
 
