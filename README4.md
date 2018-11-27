@@ -378,6 +378,198 @@ Khi có sự tương quan giữa phụ thuộc và các logic khởi tạo liên
 
 Ví dụ thực tế
 
+>Hãy tưởng tượng bạn đang ở Hardee và bạn đặt hàng một món cụ thể, giả sử "Big Hardee" và họ trao nó cho bạn mà không có bất kỳ câu hỏi nào; đây là ví dụ về Simple factory. Nhưng có những trường hợp khi logic tạo ra có thể liên quan đến nhiều bước hơn. Ví dụ: bạn muốn một thỏa thuận Subway tùy chỉnh, bạn có một số tùy chọn về cách thức làm bánh burger của bạn, ví dụ: bạn muốn bánh mì nào? bạn muốn loại nước sốt nào? Bạn muốn phô mai nào? vv Trong trường hợp như vậy builder sẽ giúp bạn.
+
+Nói một cách đơn giản
+
+>Cho phép bạn tạo ra các thuộc tính(phương thức) khác nhau của một đối tượng trong khi tránh ảnh hưởng constructor . Hữu ích khi objects có thể có nhiều thuộc tính(phương thức). Hoặc khi có rất nhiều bước liên quan đến việc tạo ra một object.
+
+Wikipedia nói là
+
+>builder pattern là phần mềm design pattern tạo đối tượng với ý định tìm kiếm một giải pháp cho mô hình chống tạo lồng ghép.
+
+Để tôi nói thêm một chút về mô hình chống tạo lồng ghép là gì. Tại một thời điểm hoặc khác, chúng tôi đã tất cả nhìn thấy một nhà xây dựng như dưới đây:
+
+```php
+public function __construct($size, $cheese = true, $pepperoni = true, $tomato = false, $lettuce = true)
+{
+}
+```
+
+>Như bạn có thể thấy; số tham số của constructor có thể nhanh chóng thoát ra khỏi bàn tay và có thể khó hiểu được sắp xếp các tham số. Thêm vào đó danh sách tham số này có thể tiếp tục phát triển nếu bạn muốn thêm nhiều tùy chọn hơn trong tương lai. Điều này được gọi là mô hình chống tạo lồng ghép.
+
+**Ví dụ lập trình**
+
+>Cách thay thế tốt là sử dụng builder pattern. Trước hết, chúng ta có bánh mì kẹp thịt mà chúng tôi muốn làm
+
+```php
+class Burger
+{
+    protected $size;
+
+    protected $cheese = false;
+    protected $pepperoni = false;
+    protected $lettuce = false;
+    protected $tomato = false;
+
+    public function __construct(BurgerBuilder $builder)
+    {
+        $this->size = $builder->size;
+        $this->cheese = $builder->cheese;
+        $this->pepperoni = $builder->pepperoni;
+        $this->lettuce = $builder->lettuce;
+        $this->tomato = $builder->tomato;
+    }
+}
+```
+
+Và sau đó chúng ta có builder
+
+```php
+class BurgerBuilder
+{
+    public $size;
+
+    public $cheese = false;
+    public $pepperoni = false;
+    public $lettuce = false;
+    public $tomato = false;
+
+    public function __construct(int $size)
+    {
+        $this->size = $size;
+    }
+
+    public function addPepperoni()
+    {
+        $this->pepperoni = true;
+        return $this;
+    }
+
+    public function addLettuce()
+    {
+        $this->lettuce = true;
+        return $this;
+    }
+
+    public function addCheese()
+    {
+        $this->cheese = true;
+        return $this;
+    }
+
+    public function addTomato()
+    {
+        $this->tomato = true;
+        return $this;
+    }
+
+    public function build(): Burger
+    {
+        return new Burger($this);
+    }
+}
+```
+
+Sau đó nó có thể sử dụng như sau
+
+```php
+$burger = (new BurgerBuilder(14))
+                    ->addPepperoni()
+                    ->addLettuce()
+                    ->addTomato()
+                    ->build();
+```
+
+**Khi nào thì sử dụng**
+
+>Khi có thể có một số thuộc tính của object và tránh việc chống lại khởi tạo. Sự khác biệt chính của factory pattern là đây; factory pattern được sử dụng khi việc khởi tạo chỉ có một bước trong tiến trình trong khi builder pattern được sử dụng khi có nhiều bước trong quá trình.
+
+# Prototype
+
+Ví dụ thực tế
+
+>Nhớ dolly chứ?chú cừu được nhân bản.Không đi vào chi tiết từ khóa quan trọng ở đây là nhân bản.
+
+Nói một cách đơn giản
+
+>Tạo một object dựa trên object đã tồn tại thông qua việc nhân bản.
+
+Wikipedia nói là
+
+>The prototype pattern là 1 creational design pattern trong phát triển phần mềm.Nó được sử dụng khi object cần tạo được xác định bởi một cá thể nguyên mẫu, được sao chép để tạo ra các object mới.
+
+Tóm lại, nó cho phép bạn tạo một bản sao của một object hiện có và sửa đổi nó theo nhu cầu của bạn, thay vì trải qua những rắc rối khi tạo một object từ đầu và thiết lập nó.
+
+**Ví dụ lập trình**
+
+Trong PHP có thể xử lý dễ dàng bằng sủ dung `clone`
+
+```php
+class Sheep
+{
+    protected $name;
+    protected $category;
+
+    public function __construct(string $name, string $category = 'Mountain Sheep')
+    {
+        $this->name = $name;
+        $this->category = $category;
+    }
+
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setCategory(string $category)
+    {
+        $this->category = $category;
+    }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
+}
+```
+
+Sau đó, nó có thể được nhân bản như sau
+
+```php
+$original = new Sheep('Jolly');
+echo $original->getName(); // Jolly
+echo $original->getCategory(); // Mountain Sheep
+
+// Clone and modify what is required
+$cloned = clone $original;
+$cloned->setName('Dolly');
+echo $cloned->getName(); // Dolly
+echo $cloned->getCategory(); // Mountain sheep
+```
+
+Khi bạn sử dụng phương thức `__clone` để chỉnh sửa hoạt động nhân bản. 
+
+**Khi nào sư dụng**
+
+Khi một object được yêu cầu tương tự như object hiện có hoặc khi việc tạo ra sẽ tốn kém hơn so với nhân bản.
+
+💍 Singleton
+------------
+
+Ví dụ thực tế
+
+Tại một thời điểm một quốc gia chỉ có 1 tổng thống.
+
+                    
+
+
+
 
 
 
