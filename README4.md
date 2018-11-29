@@ -15,9 +15,9 @@ Là một chủ đề có thể  dễ dàng khiến cho tâm trí của bất k�
 
 # Giới thiệu
 
-Design patterns là giải pháp cho các vấn đề định ky,hướng dẫn xử lý các vấn đề nhất định.Chúng không phải là class,package hay library mà bạn cho vào ứng dụng của bạn và đợi điều kì diệu xảy ra.Đây là những hướng dẫn về cách giải quyết các vấn đề nhất định trong những tình huống nhất định.
+Design patterns là giải pháp cho các vấn đề định kỳ,hướng dẫn xử lý các vấn đề nhất định.Chúng không phải là class,package hay library mà bạn cho vào ứng dụng của bạn và đợi điều kì diệu xảy ra.Đây là những hướng dẫn về cách giải quyết các vấn đề nhất định trong những tình huống nhất định.
 
-  >Design patterns là giải pháp cho các vấn đề định ky,hướng dẫn xử lý các vấn đề nhất định
+  >Design patterns là giải pháp cho các vấn đề định kỳ,hướng dẫn xử lý các vấn đề nhất định
   
 Wikipedia miêu tả chúng như là
 
@@ -82,7 +82,7 @@ Nói một cách đơn giản
 
 Ví dụ về lập trình
 
-Trước hết chúng ta có giao diện cửa và việc thực 
+Trước hết chúng ta có interface Door và các class implements nó. 
 
 ```php
 interface Door
@@ -160,7 +160,7 @@ Trong lập trình dựa trên class factory method pattern là một creational
 
 **Ví dụ về lập trình**
 
-Lấy ví dụ quản lý tuyển dụng của chúng ta ở trên. Trước hết, chúng ta có một giao diện người phỏng vấn và một số triển khai cho nó
+Lấy ví dụ quản lý tuyển dụng của chúng ta ở trên. Trước hết, chúng ta có một interface Interviewer và một số class implement  nó
 
 
 ```php
@@ -204,7 +204,7 @@ abstract class HiringManager
 
 ```
 
-Bây giờ bất kỳ con nào cũng có thể kế thừa và cung cấp  imterviewer yêu cầu
+Bây giờ bất kỳ con nào cũng có thể kế thừa và cung cấp những thứ imterviewer yêu cầu
 
 
 ```php
@@ -396,7 +396,7 @@ public function __construct($size, $cheese = true, $pepperoni = true, $tomato = 
 }
 ```
 
->Như bạn có thể thấy; số tham số của constructor có thể nhanh chóng thoát ra khỏi bàn tay và có thể khó hiểu được sắp xếp các tham số. Thêm vào đó danh sách tham số này có thể tiếp tục phát triển nếu bạn muốn thêm nhiều tùy chọn hơn trong tương lai. Điều này được gọi là mô hình chống tạo lồng ghép.
+>Như bạn có thể thấy; số tham số của constructor có thể nhanh chóng làm bạn mất kiểm soát và nó dần trở nên rất khó hiểu về sự sắp xếp các tham số. Thêm vào đó danh sách tham số này có thể tiếp tục phát triển nếu bạn muốn thêm nhiều tùy chọn hơn trong tương lai. Điều này được gọi là mô hình chống tạo lồng ghép.
 
 **Ví dụ lập trình**
 
@@ -555,7 +555,7 @@ echo $cloned->getCategory(); // Mountain sheep
 
 Khi bạn sử dụng phương thức `__clone` để chỉnh sửa hoạt động nhân bản. 
 
-**Khi nào sư dụng**
+**Khi nào sử dụng**
 
 Khi một object được yêu cầu tương tự như object hiện có hoặc khi việc tạo ra sẽ tốn kém hơn so với nhân bản.
 
