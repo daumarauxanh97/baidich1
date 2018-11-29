@@ -29,7 +29,7 @@ Wikipedia miêu tả chúng như là
 
 - Đừng cố ép buộc chúng; những điều xấu được cho là sẽ xảy ra, nếu làm như vậy.
 
-- Nhớ trong đầu rằng Desgin patterns là giải pháp cho vấn đề,chứ không phải là giải pháp tìm ra vấn đề; vì vậy suy nghĩ quá.
+- Nhớ trong đầu rằng Desgin patterns là giải pháp cho vấn đề,chứ không phải là giải pháp tìm ra vấn đề; vì vậy đừng suy nghĩ quá.
 
 - Nếu được sử dụng đúng chỗ một cách chính xác, chúng có thể là một vị cứu tinh; hoặc có thể dẫn đến một mớ code hỗn độn kinh khủng.
 
@@ -51,7 +51,7 @@ Wikipedia miêu tả chúng như là
  
  Wikipedia nói là
  
- >Trong lĩnh vực kĩ nghệ phần mềm,Creational Design patterns là Design patterns xử lý các cơ chế tạo đối tượng, cố gắng tạo các đối tượng theo cách phù hợp với tình huống. Hình thức tạo đối tượng cơ bản có thể dẫn đến các vấn đề về thiết kế hoặc thêm độ phức tạp vào thiết kế. Creational Design patterns giải quyết vấn đề này bằng một cách nào đó kiểm soát việc tạo đối tượng này.
+ >Trong lĩnh vực kĩ nghệ phần mềm, Creational Design patterns là Design patterns xử lý các cơ chế tạo đối tượng, cố gắng tạo các đối tượng theo cách phù hợp với tình huống. Hình thức tạo đối tượng cơ bản có thể dẫn đến các vấn đề về thiết kế hoặc thêm độ phức tạp vào thiết kế. Creational Design patterns giải quyết vấn đề này bằng một cách nào đó kiểm soát việc tạo đối tượng này.
  
  - Simple Factory
  
@@ -82,7 +82,7 @@ Nói một cách đơn giản
 
 Ví dụ về lập trình
 
-Trước hết chúng ta có giao diện cửa và việc thực 
+Đầu tiên chúng ta có một interface của door và implementation.
 
 ```php
 interface Door
