@@ -645,17 +645,17 @@ Ví dụ thực tế
 >Một ví dụ khác sẽ là bộ điều hợp nguồn nổi tiếng; một ổ ba chân cắm không thể được kết nối với một giắc cắm 2 chân, nó cần phải sử dụng một bộ chuyển đổi điện mà làm cho nó tương thích với ổ cắm 2 chân.
 >Một ví dụ nưa sẽ là một phiên dịch viên phiên dịch lời người này nói cho người kia
 
-In plain words
-> Adapter pattern lets you wrap an otherwise incompatible object in an adapter to make it compatible with another class.
+Nói một cách đơn giản
+> Adapter pattern cho phép bạn bao bọc một đối tượng không tương thích trong bộ điều hợp để làm cho nó tương thích với một class khác.
 
-Wikipedia says
-> In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
+Wikipedia nói là
+> Trong lĩnh vực kĩ nghệ phần mềm, adapter pattern là một software design pattern cho phép giao diện của một class hiện có được sử dụng như một giao diện khác. Nó thường được sử dụng để làm cho các class hiện tại làm việc với những class khác mà không cần sửa đổi mã nguồn của chúng.
 
-**Programmatic Example**
+**Ví dụ lập trình**
 
-Consider a game where there is a hunter and he hunts lions.
+Giả sử trong 1 trò chơi có một thợ săn và anh ta săn sư tử 
 
-First we have an interface `Lion` that all types of lions have to implement
+Đầu tiên chúng ta có một giao diện `Lion` rằng tất cả các loại sư tử phải triển khai
 
 ```php
 interface Lion
@@ -677,7 +677,8 @@ class AsianLion implements Lion
     }
 }
 ```
-And hunter expects any implementation of `Lion` interface to hunt.
+
+Và thợ săn sẽ săn bắt bất kỳ giao diện `Lion` nào.
 ```php
 class Hunter
 {
@@ -689,6 +690,9 @@ class Hunter
 ```
 
 Now let's say we have to add a `WildDog` in our game so that hunter can hunt that also. But we can't do that directly because dog has a different interface. To make it compatible for our hunter, we will have to create an adapter that is compatible
+
+
+Giả sử chúng ta phải thêm một `WildDog` trong trò chơi của chúng ta để thợ săn cũng có thể săn nó. Nhưng chúng ta không thể làm điều đó trực tiếp bởi vì con chó có một giao diện khác. Để làm cho nó tương thích với thợ săn của chúng ta, chúng tôi sẽ phải tạo một bộ điều hợp tương thích
 
 ```php
 // This needs to be added to the game
@@ -715,7 +719,7 @@ class WildDogAdapter implements Lion
     }
 }
 ```
-And now the `WildDog` can be used in our game using `WildDogAdapter`.
+Và bây giờ`WildDog` có thể sử dụng bằng cách dùng `WildDogAdapter`.
 
 ```php
 $wildDog = new WildDog();
@@ -727,20 +731,19 @@ $hunter->hunt($wildDogAdapter);
 
 🚡 Bridge
 ------
-Real world example
-> Consider you have a website with different pages and you are supposed to allow the user to change the theme. What would you do? Create multiple copies of each of the pages for each of the themes or would you just create separate theme and load them based on the user's preferences? Bridge pattern allows you to do the second i.e.
+Ví dụ thực tế
+> Giả sử bạn có một trang web với các trang khác nhau và bạn phải cho phép người dùng thay đổi chủ đề. Bạn sẽ làm gì? Tạo nhiều bản sao của mỗi trang cho mỗi chủ đề hoặc bạn chỉ cần tạo chủ đề riêng biệt và tải chúng dựa trên tùy chọn của người dùng?Bridge pattern cho phép bạn thực hiện thao tác thứ hai, tức là
 
 ![With and without the bridge pattern](https://cloud.githubusercontent.com/assets/11269635/23065293/33b7aea0-f515-11e6-983f-98823c9845ee.png)
 
-In Plain Words
-> Bridge pattern is about preferring composition over inheritance. Implementation details are pushed from a hierarchy to another object with a separate hierarchy.
+Nói một cách ngắn gọn
+> Bridge pattern là thích sáng tác hơn thừa kế. Chi tiết triển khai được đẩy từ một hệ thống phân cấp đến đối tượng khác với một hệ thống phân cấp riêng biệt
 
-Wikipedia says
-> The bridge pattern is a design pattern used in software engineering that is meant to "decouple an abstraction from its implementation so that the two can vary independently"
+Wikipedia nói rằng
+> The bridge pattern là một design pattern sử dụng trong lĩnh vực kĩ nghệ phần mềm nghĩa là "tách rời một sự trừu tượng khỏi việc thực hiện nó để hai người có thể thay đổi một cách độc lập"
+**Ví dụ lập trình**
 
-**Programmatic Example**
-
-Translating our WebPage example from above. Here we have the `WebPage` hierarchy
+Dịch ví dụ trang web của bạn từ trên xuống.Chúng ta có phân cấp `WebPage`
 
 ```php
 interface WebPage
@@ -779,7 +782,8 @@ class Careers implements WebPage
     }
 }
 ```
-And the separate theme hierarchy
+
+Và phân cấp chủ đề riêng biệt
 ```php
 
 interface Theme
@@ -809,7 +813,7 @@ class AquaTheme implements Theme
     }
 }
 ```
-And both the hierarchies
+Và cả 2 phân cấp
 ```php
 $darkTheme = new DarkTheme();
 
@@ -823,18 +827,17 @@ echo $careers->getContent(); // "Careers page in Dark Black";
 🌿 Composite
 -----------------
 
-Real world example
-> Every organization is composed of employees. Each of the employees has the same features i.e. has a salary, has some responsibilities, may or may not report to someone, may or may not have some subordinates etc.
+Ví dụ thực tế
+> Mỗi tổ chức bao gồm các nhân viên. Mỗi nhân viên có các tính năng giống nhau, tức là có lương, có trách nhiệm, có thể có hoặc không báo cáo cho ai đó, có thể có hoặc không có cấp dưới, v.v.
+Nói một cách ngắn gọn
+> Composite pattern cho phép khách hàng xử lý các đối tượng riêng lẻ theo cách thống nhất.
 
-In plain words
-> Composite pattern lets clients treat the individual objects in a uniform manner.
+Wikipedia nói răng
+> Trong lĩnh vực kĩ nghệ phần mềm, the composite pattern là một partitioning design pattern. The composite pattern mô tả rằng một nhóm các đối tượng được xử lý giống như đối tượng đơn lẻ. Mục đích của một hỗn hợp là để "soạn" các đối tượng vào cấu trúc cây để đại diện cho toàn bộ hệ thống phân cấp. Việc triển khai composite pattern cho phép khách hàng xử lý các đối tượng và bố cục riêng lẻ một cách thống nhất.
 
-Wikipedia says
-> In software engineering, the composite pattern is a partitioning design pattern. The composite pattern describes that a group of objects is to be treated in the same way as a single instance of an object. The intent of a composite is to "compose" objects into tree structures to represent part-whole hierarchies. Implementing the composite pattern lets clients treat individual objects and compositions uniformly.
+**Ví dụ lập trình**
 
-**Programmatic Example**
-
-Taking our employees example from above. Here we have different employee types
+Lấy ví dụ nhân viên ở trên. Chúng ta có các loại nhân viên khác nhau
 
 ```php
 interface Employee
@@ -913,7 +916,7 @@ class Designer implements Employee
 }
 ```
 
-Then we have an organization which consists of several different types of employees
+Sau đó, chúng tôi có một tổ chức bao gồm nhiều loại nhân viên khác nhau
 
 ```php
 class Organization
@@ -938,7 +941,7 @@ class Organization
 }
 ```
 
-And then it can be used as
+Và sau đó có thể sư dụng như sau
 
 ```php
 // Prepare the employees
@@ -956,19 +959,20 @@ echo "Net salaries: " . $organization->getNetSalaries(); // Net Salaries: 27000
 ☕ Decorator
 -------------
 
-Real world example
+Ví dụ thức tế
 
-> Imagine you run a car service shop offering multiple services. Now how do you calculate the bill to be charged? You pick one service and dynamically keep adding to it the prices for the provided services till you get the final cost. Here each type of service is a decorator.
+> Hãy tưởng tượng bạn chạy một cửa hàng dịch vụ xe hơi cung cấp nhiều dịch vụ. Bây giờ bạn tính toán hóa đơn như thế nào? Bạn chọn một dịch vụ và tự động tiếp tục bổ thêm giá  các dịch vụ được cung cấp cho đến khi bạn nhận được chi phí cuối cùng. Ở đây mỗi loại dịch vụ là một Decorator..
 
-In plain words
-> Decorator pattern lets you dynamically change the behavior of an object at run time by wrapping them in an object of a decorator class.
+Nói một cách ngắn gọn
+> Decorator pattern 
+cho phép bạn tự động thay đổi hành vi của một đối tượng tại thời gian chạy bằng cách gói chúng trong một đối tượng của Decorator class.
 
-Wikipedia says
-> In object-oriented programming, the decorator pattern is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
+Wikipedia nói là
+> Trong lập trình hướng đối tượng, the decorator pattern là một design pattern cho phép hành vi được thêm vào một đối tượng riêng lẻ, hoặc tĩnh hoặc động, mà không ảnh hưởng đến hành vi của các đối tượng khác từ cùng một class. Decorator pattern  thường hữu ích cho việc tuân thủ Single Responsibility Principle, vì nó cho phép chức năng được chia giữa các class được quan tâm đặc biệt tới
 
-**Programmatic Example**
+**Ví dụ lập trình**
 
-Lets take coffee for example. First of all we have a simple coffee implementing the coffee interface
+Lấy ví dụ cà phê. Trước hết, chúng ta thực hiện giao diện cà phê đơn giản
 
 ```php
 interface Coffee
@@ -990,7 +994,7 @@ class SimpleCoffee implements Coffee
     }
 }
 ```
-We want to make the code extensible to allow options to modify it if required. Lets make some add-ons (decorators)
+Chúng ra muốn code có thể mở rộng để cho phép các tùy chọn sửa đổi nó nếu được yêu cầu. Cho phép thực hiện một số tiện ích bổ sung (decorators)
 ```php
 class MilkCoffee implements Coffee
 {
@@ -1053,7 +1057,7 @@ class VanillaCoffee implements Coffee
 }
 ```
 
-Lets make a coffee now
+Bây giờ hãy làm cà phê
 
 ```php
 $someCoffee = new SimpleCoffee();
@@ -1076,18 +1080,18 @@ echo $someCoffee->getDescription(); // Simple Coffee, milk, whip, vanilla
 📦 Facade
 ----------------
 
-Real world example
-> How do you turn on the computer? "Hit the power button" you say! That is what you believe because you are using a simple interface that computer provides on the outside, internally it has to do a lot of stuff to make it happen. This simple interface to the complex subsystem is a facade.
+Ví dụ thực tế
+> Bạn bật máy tính lên như thế nào? Bạn bảo là "Nhấn nút nguồn"! Đó là điều bạn tin bởi vì bạn đang sử dụng một giao diện đơn giản mà máy tính cung cấp ở bên ngoài, bên trong nó phải làm rất nhiều thứ để làm cho nó xảy ra. Giao diện đơn giản này cho hệ thống con phức tạp là một facade.
 
-In plain words
-> Facade pattern provides a simplified interface to a complex subsystem.
+Nói một cách đơn giản
+> Facade pattern cung cấp một giao diện đơn giản cho một hệ thống con phức tạp.
 
-Wikipedia says
-> A facade is an object that provides a simplified interface to a larger body of code, such as a class library.
+Wikipedia nói rằng
+> Một facade là một object cung cấp một giao diện đơn giản hóa cho một mã lớn hơn, chẳng hạn như một class thư viện.
 
-**Programmatic Example**
+**Ví dụ lập trình**
 
-Taking our computer example from above. Here we have the computer class
+Lấy ví dụ máy tính ở trên. Chúng ta có class máy tính
 
 ```php
 class Computer
@@ -1128,7 +1132,7 @@ class Computer
     }
 }
 ```
-Here we have the facade
+Chúng ta có facade
 ```php
 class ComputerFacade
 {
@@ -1155,7 +1159,7 @@ class ComputerFacade
     }
 }
 ```
-Now to use the facade
+Bây giờ sủ dung facade
 ```php
 $computer = new ComputerFacade(new Computer());
 $computer->turnOn(); // Ouch! Beep beep! Loading.. Ready to be used!
@@ -1165,18 +1169,18 @@ $computer->turnOff(); // Bup bup buzzz! Haah! Zzzzz
 🍃 Flyweight
 ---------
 
-Real world example
-> Did you ever have fresh tea from some stall? They often make more than one cup that you demanded and save the rest for any other customer so to save the resources e.g. gas etc. Flyweight pattern is all about that i.e. sharing.
+Ví dụ thực tế
+> Bạn đã từng uống trà tươi từ một số gian hàng chưa? Họ thường làm nhiều hơn một ly mà bạn yêu cầu và tiết kiệm phần còn lại cho bất kỳ khách hàng nào khác để tiết kiệm tài nguyên, ví dụ như: khí ga, vv Flyweight pattern là tất cả về điều đó tức là chia sẻ.
 
-In plain words
-> It is used to minimize memory usage or computational expenses by sharing as much as possible with similar objects.
+Nói một cách đơn giản
+> Nó được sử dụng để giảm thiểu sử dụng bộ nhớ hoặc chi phí tính toán bằng cách chia sẻ càng nhiều càng tốt với các đối tượng tương tự.
 
-Wikipedia says
-> In computer programming, flyweight is a software design pattern. A flyweight is an object that minimizes memory use by sharing as much data as possible with other similar objects; it is a way to use objects in large numbers when a simple repeated representation would use an unacceptable amount of memory.
+Wikipedia nói rằng
+> Trong lập trình, flyweight là một software design pattern. A flyweight là một đối tượng giảm thiểu việc sử dụng bộ nhớ bằng cách chia sẻ càng nhiều dữ liệu càng tốt với các đối tượng tương tự khác; nó là một cách để sử dụng các đối tượng với số lượng lớn khi một biểu diễn đơn giản lặp lại sẽ sử dụng một lượng bộ nhớ không thể chấp nhận được.
 
-**Programmatic example**
+**Ví dụ lập trình**
 
-Translating our tea example from above. First of all we have tea types and tea maker
+Từ ví dụ trà ở trên. Trước hết, chúng ta có các loại trà và máy pha trà
 
 ```php
 // Anything that will be cached is flyweight.
@@ -1201,7 +1205,7 @@ class TeaMaker
 }
 ```
 
-Then we have the `TeaShop` which takes orders and serves them
+Sau đó có `TeaShop` nhận đơn đặt hàng và phục vụ họ
 
 ```php
 class TeaShop
@@ -1227,7 +1231,7 @@ class TeaShop
     }
 }
 ```
-And it can be used as below
+Và nó có thể sử dung như sau
 
 ```php
 $teaMaker = new TeaMaker();
@@ -1245,18 +1249,19 @@ $shop->serve();
 
 🎱 Proxy
 -------------------
-Real world example
-> Have you ever used an access card to go through a door? There are multiple options to open that door i.e. it can be opened either using access card or by pressing a button that bypasses the security. The door's main functionality is to open but there is a proxy added on top of it to add some functionality. Let me better explain it using the code example below.
+Ví dụ thực tế
+> 
+Bạn đã bao giờ sử dụng một thẻ truy cập để đi qua một cánh cửa? Có nhiều tùy chọn để mở cửa đó tức là nó có thể được mở bằng cách sử dụng thẻ truy cập hoặc bằng cách nhấn một nút để vượt qua bảo mật. Chức năng chính của cửa là để mở nhưng có một proxy được thêm vào đầu nó để thêm một số chức năng. Hãy để tôi giải thích rõ hơn bằng cách sử dụng ví dụ code bên dưới.
 
-In plain words
-> Using the proxy pattern, a class represents the functionality of another class.
+Nói một cách đơn giản
+> Sử dụng proxy pattern, một classđại diện cho chức năng của một class khác.
 
-Wikipedia says
-> A proxy, in its most general form, is a class functioning as an interface to something else. A proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes. Use of the proxy can simply be forwarding to the real object, or can provide additional logic. In the proxy extra functionality can be provided, for example caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked.
+Wikipedia nói rằng
+> Một proxy, ở dạng tổng quát nhất của nó, là một class hoạt động như một giao diện cho một cái gì đó khác. Proxy là một đối tượng bao bọc hoặc tác nhân được gọi bởi máy khách để truy cập đối tượng phục vụ thực đằng sau hậu trường. Việc sử dụng proxy chỉ đơn giản là có thể chuyển tiếp đến đối tượng thực, hoặc có thể cung cấp thêm logic. Trong chức năng bổ sung proxy có thể được cung cấp, ví dụ bộ nhớ đệm khi các hoạt động trên đối tượng thực là tài nguyên chuyên sâu, hoặc kiểm tra điều kiện tiên quyết trước khi hoạt động trên đối tượng thực được gọi.
 
-**Programmatic Example**
+**Ví dụ lập trình**
 
-Taking our security door example from above. Firstly we have the door interface and an implementation of door
+Lấy ví dụ cửa bảo mật ơ trên.Đầu tiên chúng ta có giao diện cửa và thực hiện cửa
 
 ```php
 interface Door
@@ -1278,7 +1283,8 @@ class LabDoor implements Door
     }
 }
 ```
-Then we have a proxy to secure any doors that we want
+
+Sau đó, chúng ta có một proxy để bảo vệ bất kỳ cửa nào mà chúng ta muốn
 ```php
 class SecuredDoor
 {
@@ -1309,7 +1315,7 @@ class SecuredDoor
     }
 }
 ```
-And here is how it can be used
+Và đây là cách nó được sủ dụng
 ```php
 $door = new SecuredDoor(new LabDoor());
 $door->open('invalid'); // Big no! It ain't possible.
@@ -1317,7 +1323,8 @@ $door->open('invalid'); // Big no! It ain't possible.
 $door->open('$ecr@t'); // Opening lab door
 $door->close(); // Closing lab door
 ```
-Yet another example would be some sort of data-mapper implementation. For example, I recently made an ODM (Object Data Mapper) for MongoDB using this pattern where I wrote a proxy around mongo classes while utilizing the magic method `__call()`. All the method calls were proxied to the original mongo class and result retrieved was returned as it is but in case of `find` or `findOne` data was mapped to the required class objects and the object was returned instead of `Cursor`.
+
+Tuy nhiên, một ví dụ khác sẽ là một số loại triển khai trình ánh xạ dữ liệu. Ví dụ, gần đây tôi đã thực hiện một ODM (Object Data Mapper) cho MongoDB bằng cách sử dụng mẫu này, nơi tôi đã viết một proxy xung quanh các class mongo trong khi sử dụng phương thức ma thuật `__call ()`. Tất cả các lời gọi phương thức được đưa vào class mongo ban đầu và kết quả được truy xuất được trả về vì nó là trong trường hợp dữ liệu `find` hoặc` findOne` được ánh xạ tới các đối tượng class được yêu cầu và đối tượng được trả về thay vì `Cursor`.
 
 
 
