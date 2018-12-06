@@ -689,9 +689,6 @@ class Hunter
 }
 ```
 
-Now let's say we have to add a `WildDog` in our game so that hunter can hunt that also. But we can't do that directly because dog has a different interface. To make it compatible for our hunter, we will have to create an adapter that is compatible
-
-
 Giả sử chúng ta phải thêm một `WildDog` trong trò chơi của chúng ta để thợ săn cũng có thể săn nó. Nhưng chúng ta không thể làm điều đó trực tiếp bởi vì con chó có một giao diện khác. Để làm cho nó tương thích với thợ săn của chúng ta, chúng tôi sẽ phải tạo một bộ điều hợp tương thích
 
 ```php
@@ -964,8 +961,7 @@ Ví dụ thức tế
 > Hãy tưởng tượng bạn chạy một cửa hàng dịch vụ xe hơi cung cấp nhiều dịch vụ. Bây giờ bạn tính toán hóa đơn như thế nào? Bạn chọn một dịch vụ và tự động tiếp tục bổ thêm giá  các dịch vụ được cung cấp cho đến khi bạn nhận được chi phí cuối cùng. Ở đây mỗi loại dịch vụ là một Decorator..
 
 Nói một cách ngắn gọn
-> Decorator pattern 
-cho phép bạn tự động thay đổi hành vi của một đối tượng tại thời gian chạy bằng cách gói chúng trong một đối tượng của Decorator class.
+> Decorator pattern cho phép bạn tự động thay đổi hành vi của một đối tượng tại thời gian chạy bằng cách gói chúng trong một đối tượng của Decorator class.
 
 Wikipedia nói là
 > Trong lập trình hướng đối tượng, the decorator pattern là một design pattern cho phép hành vi được thêm vào một đối tượng riêng lẻ, hoặc tĩnh hoặc động, mà không ảnh hưởng đến hành vi của các đối tượng khác từ cùng một class. Decorator pattern  thường hữu ích cho việc tuân thủ Single Responsibility Principle, vì nó cho phép chức năng được chia giữa các class được quan tâm đặc biệt tới
