@@ -1,21 +1,21 @@
 # baidich1 Chương 5 + 6
 # Trang 1
-# Chương 5: Cách để tối ưu nội dung của bạn qua tỷ lệ thoát va thời gian sử dụng.
+# Chương 5: Cách để tối ưu nội dung của bạn qua tỷ lệ thoát và thời gian dừng.
 
 Ok vậy bạn đã sử dung mẹo thúc đẩy CTR của tôi.Và dã có nhiều người hơn bao giờ hết kích vào kết quả của bạn.
 
-Bây giờ thì sao?À,bạn phải cho google thấy rằng kết quả của bạn khiến người sử dụng vui vẻ.
+Bây giờ thì sao?À,bạn phải cho google thấy rằng kết quả của bạn khiến người sử dụng hài lòng.
 
 Và cách tốt nhất để làm điều đó?Cải thiện thời gian dừng của bạn.
 # Trang 2
-# Google có thật sự sủ dụng thời gian dừng?Dúng vậy.
-Thời gian dừng là khối lượng thời gian một một người tìm kiếm dành thời gian trên trang của bạn sau khi kích vào kết quả của bạn.
+# Google có thật sự sủ dụng thời gian dừng? Có đấy!
+Thời gian dừng là khối lượng thời gian một người tìm kiếm dành thời gian trên trang của bạn sau khi kích vào kết quả của bạn.
 
-Dĩ nhiên,thời gian một người dành cho trang của bạn càng dai càng tốt.Vấy này sẽ nói với google là :Bạn tôi ơi,mọi ngườ rất thích kết quả này.Hãy nâng nó lên một vài bậc.
+Dĩ nhiên,thời gian một người dành cho trang của bạn càng lâu càng tốt.Nó sẽ nói với google là :Bạn tôi ơi ,mọi người rất thích kết quả này.Hãy nâng nó lên một vài bậc.
 
 Và nếu có ai đó nhảy ra khỏi trang của bạn sau 2 giây,điều đó bảo với google rằng :Kết quả này tồi tệ,hãy giảm nó xuống một vài bậc.
 
-Vì vậy nó hợp lý rằng RankBrain sẽ đo thời gian dừng - và đổi chỗ kết quả dựa trên những tín hiệu này.
+Vì vậy nó hợp lý rằng RankBrain sẽ đo thời gian dừng - và đảo các kết quả xung quoanh dựa trên những tín hiệu này.
 
 Thực ra,gần đây một nhân viên google đã nói rằng google đã từng 100% dựa vào tín hiệu trả về(đặc biệt là tín hiệu trả về).Mặc dù google vẫn sử dụng liên kết trả về,người nhân viên đã chỉ ra răng:
 
@@ -39,7 +39,7 @@ Thay vì thế,bạn đưa câu đầu tiên của kết quả của bạn ở t
 
 Bằng cách đó bạn sẽ thu hút được người đọc của bạn ngay lập tức.
 
-# 2 Sử dụng giới thiệu ngắn(tối đa 5-10 câu)
+# 2 Sử dụng giới thiệu ngắn(tối đa 5-10 câu tối đa)
 
 Tin hay không tùy bạn,nhưng tôi dành nhiều thời gian của tôi hơn vào phần giới thiệu hơn la tiêu đề.
 
@@ -51,13 +51,13 @@ Tại sao?
 
 Khi một người nào đó tìm kiếm một thứ gì đó trên google,họ đã biết về chủ đề đó.Vì vậy không cần giới thiệu nhiều.
 
-Thay vì vậy,sư dụng phần giới thiệu của bạn để thu hút người đọc về nội dung họ chuẩn bị đọc,như thế này:
+Thay vì vậy,sử dụng phần giới thiệu của bạn để thu hút người đọc về nội dung họ chuẩn bị đọc,như thế này:
 
 Khi một ai đó tìm kiếm “white hat SEO” đọc lời giới thiệu họ nghĩ:Thật tuyệt,mình đã đến đúng chỗ rồi.
 
-# 3 Đẩy lên nội dung dài,sâu.
+# 3 Xuất bản những nội dung dài, có chiều sâu
 
-Tôi đã kiếm việc này mười cách tới thứ ba.Và tôi có thể tự tin nói với bạn rằng:
+Tôi đã thử nghiệm điều này 10 cách khác nhau vào thứ ba.Và tôi có thể tự tin nói với bạn rằng:
 
 Nội dung dài=Thời gian dừng tốt hơn.
 
@@ -79,7 +79,7 @@ Vậy nên bạn lấy một tách cà phê và đọc bản hướng dẫn từ
 
 Nội dung hoạt động rất tốt khiến tôi chỉ có khuynh hướng đăng tải nội dung có ít nhất 2000 từ.
 
-# 4 Tách nội dung của bạn thành các phần vừa để đọc.
+# 4 Chia nhỏ nội dung của bạn thành các phần vừa để đọc.
 
 Hãy nhận ra rằng:
 
@@ -95,7 +95,7 @@ Tôi sử dụng rất nhiều tiêu đề phụ ở liên kết trả về cũn
 
 Đặc biệt tôi có gắng đẩy lên 1 tiêu đề phụ mỗi 200 từ của nội dung.
 
-Mẹo hay:Tránh những tiêu đề phụ nhàm chán như “Backhand Drills” hay là “Stay Hydrated”.Thay vì thế,đặt nhan đề phụ cảu bạn với cảm xúc. 
+Mẹo hay:Tránh những tiêu đề phụ nhàm chán như “Backhand Drills” hay là “Stay Hydrated”.Thay vì thế,đặt tiêu đề phụ cảu bạn theo/bằng cảm xúc. 
 Ví dụ như  “3 Simple Backhand Drills The Pros Use” và “What New Research Says About Staying Hydrated.”
 
 # Chương 6:Thêm về chiến lược tối ưu hóa RankBrain và các nghiên cứu điển hình.
@@ -106,7 +106,7 @@ Trong chương này tôi sẽ nói về chiến thuật hữu ích và nhanh g�
 
 Tăng nhận thức về thương hiện cải thiện CTR.
 
-Tôi đã cho bạn thấy cách mà sô,cảm xúc và từ ngữ có sức ảnh hưởng mạnh có thể cải thiện CTR không phải trả tiền của bạn.
+Tôi đã cho bạn thấy cách tính số,cảm xúc và từ ngữ có sức ảnh hưởng mạnh có thể cải thiện CTR không phải trả tiền của bạn.
 
 Nhưng có một vấn đề lớn tôi chưa đề cập:nhận thức thương hiệu.
 
